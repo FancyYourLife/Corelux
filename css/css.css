@@ -1,10 +1,9 @@
-<style>
         /* Custom CSS for minor adjustments or overrides */
 		body {
             padding-top: 56px; /* Adjust based on your fixed navbar height */
         }
         .hero-section {
-            background: #f8f9fa; /* Light grey background for the hero */
+            /*background: #f8f9fa;*/ /* Light grey background for the hero */
             padding: 76px 0;
             text-align: center;
         }
@@ -84,4 +83,16 @@
 			left:20px;
 			top:25px;
 		}
-</style>
+		
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .coreAboutUs {
+		max-width: 80%;
+    }
+	.coreTitle {
+		font-size: 20px;
+	}
+	.navbar-brand{
+		font-size: 16px;
+	}
+}

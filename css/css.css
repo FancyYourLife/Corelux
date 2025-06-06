@@ -1,0 +1,18 @@
+<style>
+        /* Custom CSS for minor adjustments or overrides */
+        body {
+            padding-top: 56px; /* Adjust based on your fixed navbar height */
+        }
+        .hero-section {
+			
+            background: #f8f9fa; /* Light grey background for the hero */
+            padding: 100px 0;
+            text-align: center;
+        }
+        .footer {
+            background: #343a40; /* Dark background for the footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+</style>

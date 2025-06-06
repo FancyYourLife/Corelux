@@ -1,12 +1,11 @@
 <style>
         /* Custom CSS for minor adjustments or overrides */
-        body {
+		body {
             padding-top: 56px; /* Adjust based on your fixed navbar height */
         }
         .hero-section {
-			
             background: #f8f9fa; /* Light grey background for the hero */
-            padding: 100px 0;
+            padding: 76px 0;
             text-align: center;
         }
         .footer {
@@ -15,4 +14,74 @@
             padding: 20px 0;
             text-align: center;
         }
+		.coreMenu{
+			background: #1c2d39 !important;
+		}
+		.coreTitle {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			line-height: 26px;
+			text-align: center;
+			font-family: SoehneBreitBuch;
+			font-weight: 300;
+			font-size: 40px;
+			text-transform: uppercase;
+		}
+		.coreTitle2 {
+			color: #cc5300;
+			padding-top:80px;
+			margin-bottom: 26px;
+			font-family: SoehneBreitBuch;
+			font-size: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.coreLink {
+			
+		}
+		.coreAboutUs{
+			background-color: #1c2d39;
+			margin-left: 30px;
+			margin-top: -100px;
+			color: #fff;
+			padding-top:40px;
+			padding-bottom: 40px;
+			text-align: left;
+		}
+		.coreFooter{
+			padding-top: 30px;
+		}
+		
+	`	.coreVideoContainer {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+
+		.coreCentered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: SoehneBreitBuch;
+			font-size: 54px;
+			color: #fff;
+		}
+		.coreWrapper{
+			position:relative;
+			left:5px;
+			top:3px;
+			background-image:url("img/showRoom.jpg");
+		}
+
+		.coreWord{
+			margin-top: -500px;
+			font-size:30px;
+			font-weight:bold;
+			color:#F0F0F0;
+			font-family: arial;
+			position:relative;
+			left:20px;
+			top:25px;
+		}
 </style>

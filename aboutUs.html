@@ -9,25 +9,24 @@
 	<link href="css/css.css" rel="stylesheet">
 	<script src="js/script.js"></script>
 </head>
-<body>
-	<div menu-include-html="menu.html"></div>
+<body class="coreBody">
 	<div class="hero-section">
-    
-        <div class="row">
-			<img alt="about" src="img/banner-about-urbanfloor.jpg"/>
-            <div class="col-md-6 coreAboutUs">
-                <h2 class="coreTitle">About Corelux</h2>
-                <p>Welcome to CoreLux Interior Supply, where we specialize in bringing luxury interior materials within reach. Our mission is to make top-of-the-line materials accessible and affordable for everyone, without compromising on quality or style. At CoreLux Interior Supply, we offer a range of premium SPC flooring and Luxury Wall Panels that are not only functional and durable, but also beautifully designed to elevate any space. Our products incorporate the latest technology and cutting-edge design, making them stand out in the market. Whether you are renovating your home, building a new commercial space, or looking for high-quality materials for a project, CoreLux Interior Supply is here to help to bring your vision to life. Check out our proud brand TATA Building Material to find out about our fabulous flooring and wall products.
-				</p>
-            </div>
-            
+		<div class="row">
+			<div class="col-md-12" style="text-align:right; z-index:999"><button onclick="switchDisplay();">En/中</button></div>
 		</div>
+		<!-- Your Content Start Here -->
+        <div class="row">
+			<img alt="about" src="img/banner-about-urbanfloor.jpg" style="margin-top:-32px;"/>
+            <div class="col-md-6 coreAboutUs">
+                <h2 class="coreTitle displayEN">About Corelux</h2>
+				<h2 class="coreTitle displayCN">关于我们</h2>
+                <p class="displayEN">Welcome to CoreLux Interior Supply, where we specialize in bringing luxury interior materials within reach. Our mission is to make top-of-the-line materials accessible and affordable for everyone, without compromising on quality or style. At CoreLux Interior Supply, we offer a range of premium SPC flooring and Luxury Wall Panels that are not only functional and durable, but also beautifully designed to elevate any space. Our products incorporate the latest technology and cutting-edge design, making them stand out in the market. Whether you are renovating your home, building a new commercial space, or looking for high-quality materials for a project, CoreLux Interior Supply is here to help to bring your vision to life. Check out our proud brand TATA Building Material to find out about our fabulous flooring and wall products.
+				</p>
+				<p class="displayCN">这是一段中文介绍</p>
+            </div>
+		</div>
+		<!-- Your Content End Here -->
     
 	</div>
-	<div footer-include-html="footer.html"></div>
-<script>
-includeMenu();
-includeFooter();
-</script>
 </body>
 </html>

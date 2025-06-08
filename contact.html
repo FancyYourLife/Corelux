@@ -9,10 +9,16 @@
 	<link href="css/css.css" rel="stylesheet">
 	<script src="js/script.js"></script>
 </head>
-<body>
-	<div menu-include-html="menu.html"></div>
-    <div class="hero-section">
-        <div class="row">
+<body class="coreBody">
+	<div class="hero-section">
+		<div class="row">
+			<div class="col-md-12" style="text-align:right; z-index:999"><button onclick="switchDisplay();">En/中</button></div>
+		</div>
+        <!-- This is a sample content webpage template -->
+		<!-- Your Content Start Here -->
+		<div class="container">
+            
+			<div class="row">
 			<div class="col-sm-12 coreTitle">Contact Us</div>
 			<div class="col-sm-4">
 				<h1 class="coreTitle2">SHOW ROOM<h1>
@@ -29,12 +35,14 @@
 				<h1 class="coreTitle2">Email Us<h1>
 				<p class="lead">enquiry@corelux.com.sg</p>
 			</div>
+			</div>
+			
+			
+			
+			
         </div>
+		<!-- Your Content End Here -->
+		
     </div>
-	<div footer-include-html="footer.html"></div>
-<script>
-includeMenu();
-includeFooter();
-</script>
 </body>
 </html>

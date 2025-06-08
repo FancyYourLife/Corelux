@@ -1,56 +1,37 @@
-function includeMenu() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("menu-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("menu-include-html");
-          includeMenu();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
+function changeIframeSrc(newSrc) {
+  document.getElementById("coreFrame").src = newSrc;
 }
 
-function includeFooter() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("footer-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("footer-include-html");
-          includeFooter();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
+var showEN = true;
+function switchDisplay() {
+	if (showEN){
+		var elsEN = document.getElementsByClassName("displayEN");
+		Array.prototype.forEach.call(elsEN, function(el) {
+			// Do stuff here
+			//console.log(el.tagName);
+			el.style.display = "none";
+		});
+		var elsCN = document.getElementsByClassName("displayCN");
+		Array.prototype.forEach.call(elsCN, function(el) {
+			// Do stuff here
+			//console.log(el.tagName);
+			el.style.display = "block";
+		});
+		showEN = false;
+	}else{
+		var elsCN = document.getElementsByClassName("displayCN");
+		Array.prototype.forEach.call(elsCN, function(el) {
+			// Do stuff here
+			//console.log(el.tagName);
+			el.style.display = "none";
+		});
+		var elsEN = document.getElementsByClassName("displayEN");
+			Array.prototype.forEach.call(elsEN, function(el) {
+			// Do stuff here
+			//console.log(el.tagName);
+			el.style.display = "block";
+		});
+		showEN = true;
+	}
 }
 

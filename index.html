@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORELUX INTERIOR SUPPLY</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<link href="css/css.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!--Bootstrap CSS and Script-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!--Menu Bar CSS and Script-->
+    <link rel="stylesheet" href="css/bootnavbar.css" />
 	<script src="js/script.js"></script>
-</head>
-<body>
-	<div menu-include-html="menu.html"></div>
-    <div class="hero-section">
-		<div class="row">
-			<div class="col-md-12">
-			<div class="coreVideoContainer">
-				<video style="width:100%;" autoplay="" muted="" loop="" playsinline="" src="img/homeDemo.mp4" data-object-fit="cover"></video>
-				<div class="coreCentered">STEP INTO<br>LUXURY &amp; COMFORT</div>
+	
+	<!--Webpage Main CSS and Script-->
+	<link href="css/css.css" rel="stylesheet">
+	<script src="js/bootnavbar.js"></script>
+	
+	<!--Webpage Title, description and keywords-->
+    <title>CORELUX INTERIOR SUPPLY</title>
+    <meta name="description" content="CORELUX INTERIOR SUPPLY"/>
+    <meta name="keywords" content="CORELUX INTERIOR SUPPLY"/>	
+  </head>
+
+  <body>
+  
+	<!--Menu Bar Start-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark coreMenu" id="main_navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/img/logo.jpg" alt="logo" width="50" height="50">CORELUX INTERIOR SUPPLY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto !important;">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" onclick="changeIframeSrc('aboutUs.html');">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="changeIframeSrc('quanwudingzhi.html');">Full-Home Custom</a></li>
+            <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TATA Collections</a>
+				<ul class="dropdown-menu">
+					<li class="nav-item dropdown">
+					<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TATA Flooring</a>
+					<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeIframeSrc('timber.html');">Timber Wonders</a></li>
+						<li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeIframeSrc('stone.html');">Stone Marvels</a></li>
+					</ul>
+					</li>
+					<li><hr class="dropdown-divider" /></li>
+					<li><a class="dropdown-item" href="#">TATA Wall Panel</a></li>
+					<li><hr class="dropdown-divider" /></li>
+					<li><a class="dropdown-item" href="#">TATA Accesaries</a></li>
+					<!-- /This is 4 Levels menu reference code, you can copy it when you need it./
+					<li class="nav-item dropdown">
+						<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TATA Level 2 Menu</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item dropdown">
+								<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TATA Level 3 Menu</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Timber Level 4 Menu</a></li>
+									<li><a class="dropdown-item" href="#">Timber Level 4 Menu</a></li>
+								</ul>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li><a class="dropdown-item" href="#">TATA Accesaries</a></li>
+							<li><hr class="dropdown-divider" /></li>
+							<li><a class="dropdown-item" href="#">TATA Wall Panel</a></li>
+						</ul>
+					</li>
+					<li><hr class="dropdown-divider" /></li>
+					-->
+              </ul>
+            </li>
+			
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Show Case</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+					<a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Full-Home Custom</a>
+					<ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeIframeSrc('gallery1.html');">Gallery 1</a></li>
+						<li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeIframeSrc('gallery2.html');">Gallery 2</a></li>
+					</ul>
+                </li>
+				<li><hr class="dropdown-divider" /></li>
+				<li><a class="dropdown-item" href="#" onclick="changeIframeSrc('gallery1.html');">Flooring</a></li>
+				<li><hr class="dropdown-divider" /></li>
+				<li><a class="dropdown-item" href="#" onclick="changeIframeSrc('gallery2.html');">Wall Panel</a></li>
+              </ul>
+            </li>
+			<li class="nav-item"><a class="nav-link" href="#" onclick="changeIframeSrc('contact.html');">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      new bootnavbar();
+    </script>
+	<!--Menu Bar End-->
+	
+	<!--Web Content Start-->
+	<iframe id="coreFrame" style="width:100%; min-height:1024px;" src="aboutUs.html"></iframe>
+	<!--Web Content End-->
+	
+	<!--Footer Start-->
+	<footer class="corefooter">
+	<!--<footer class="footer fixed-bottom">-->
+        <div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3 coreTitle2"><a class="nav-link active" aria-current="page" href="/aboutUs.html">ABOUT US</a></div>
+				<div class="col-md-3 coreTitle2"><a class="nav-link" href="/contact.html">CONTACT US</a></div>
+				<div class="col-md-3"></div>
 			</div>
-		</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-			<div class="coreWrapper">
-				<img style="width:90%;" alt="about" src="img/showRoom.jpg"/>
-			<div class="coreWord">
-				<p class="lead">view our entire product line in person</p>
-				<p class="lead coreTitle">Showroom</p>
-				<p class="lead">2 Jurong East Street 21, #03-183 IMM Building Singapore 609601(By Appointment Only)</p>
-				<a href="/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+			<div class="row">
+				<span class="coreFooter">Corelux © 2023 - 2025 All Rights Reserved.</span>
 			</div>
-			</div>
-			</div>
-		</div>
-    </div>
-	<div footer-include-html="footer.html"></div>
-<script>
-includeMenu();
-includeFooter();
-</script>
-</body>
+        </div>
+	</footer>
+	<!--Footer End-->
+
+	</body>
 </html>

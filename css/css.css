@@ -67,6 +67,7 @@
 			font-size: 0.5625rem;
 			letter-spacing: 0.25em;
 			text-align: left;
+			padding-top:7px;
 		}
 		
 		
@@ -159,5 +160,6 @@
 @media screen and (min-width: 768px) {
 	.coreModal{
 		max-width: 80%;
+		max-width: 1024px;
 	}
 }	

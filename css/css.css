@@ -28,6 +28,17 @@
 			display:none; /* Hide the Chinese Content */
 		}
 		
+		.coreButton{
+			border-color:#000;
+			background-color:#fff;
+		}
+		.coreButton:hover{
+			border-color:#000;
+			background-color:#fff;
+		}
+		
+		
+		/* About Us Page CSS */
 		.coreAboutUs{
 			background-color: #1c2d39;
 			margin-left: 30px;
@@ -38,21 +49,25 @@
 			text-align: left;
 		}
 		
-		
+		/* Flooring Page CSS */
 		.floorTitle{
 			color: rgb(44, 45, 51);
 			font-family: SoehneBreitLeicht;
 			font-size: 26px;
 			font-weight: 400;
 		}
-		
 		.floorSku{
 			color: rgb(166, 153, 137);
 			font-family: SoehneBreitLeicht;
 			font-size: 11px;
 			font-weight: 400;
 		}
-
+		.floorDes {
+			font-family: SoehneBreitBuch;
+			font-size: 0.5625rem;
+			letter-spacing: 0.25em;
+			text-align: left;
+		}
 		
 		
 		
@@ -139,3 +154,10 @@
 		font-size: 20px; /* Adjust font size in phone view */
 	}
 }
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+	.coreModal{
+		max-width: 80%;
+	}
+}	

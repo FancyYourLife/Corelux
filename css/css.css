@@ -1,279 +1,123 @@
-        /* Custom CSS for minor adjustments or overrides */
-		.coreMenu{
-			background: #2a292e !important;/* Set menu background color same to log background */
-		}
-		.coreBody{
-			background: #f8f9fa;/* Light grey background for body */
-			width:100%;
-            height:100vh;
-            overflow-x:hidden; /* Hide the scroll bar in X for iFrame */
-            margin:0px;
-            padding:0px;
-            border:none;
-		}
-		.corefooter {
-            background: #2a292e; /* Dark background for the footer */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-		
-		/* This will be the div content for all webpages */
-		.hero-section {
-            background: #f8f9fa;/* Light grey background for the hero */
-            text-align: center;
-        }
-		
-		.displayCN{
-			display:none; /* Hide the Chinese Content */
-		}
-		
-		.coreButton{
-			border-color:#000;
-			background-color:#fff;
-		}
-		.coreButton:hover{
-			border-color:#000;
-			background-color:#fff;
-		}
-		
-		
-		/* About Us Page CSS */
-		.coreAboutUs{
-			background-color: #1c2d39;
-			margin-left: 30px;
-			margin-top: -100px;/* Let the div float on top of the image */
-			color: #fff;
-			padding-top:40px;
-			padding-bottom: 40px;
-			text-align: left;
-		}
-		
-		/* Flooring and Wall Panel Listing Page CSS */
-		.floorTitle{
-			color: rgb(44, 45, 51);
-			font-family: SoehneBreitLeicht;
-			font-size: 26px;
-			font-weight: 400;
-		}
-		.floorSku{
-			color: rgb(166, 153, 137);
-			font-family: SoehneBreitLeicht;
-			font-size: 11px;
-			font-weight: 400;
-		}
-		.floorDes {
-			font-family: SoehneBreitBuch;
-			font-size: 0.5625rem;
-			letter-spacing: 0.25em;
-			text-align: left;
-			padding-top:7px;
-		}
-		.product-detail-top{
-			background-color: rgb(28, 45, 57);
-		}
-		.product-description{
-			text-align: left;
-			padding-bottom: 5px;
-			color: rgb(255, 255, 255);
-			font-family: IskryRegular;
-			font-size: 13.008px;
-			font-weight: 400;
-		}
-		.product-detail-top{
-			padding-top: 5px;
-		}
-		.product-detail-top__attributes{
-			list-style: none;
-			margin: 0;
-			color: rgb(255, 255, 255);
-			text-align: left;
-		    text-transform: uppercase;
-			font-family: IskryRegular;
-			font-size: 13.008px;
-			font-weight: 400;
-		}	
-		@media (min-width: 992px) {
-			.product-detail-top__attributes {
-				flex: 1 0 31%;
-				margin-left: 7.916666vw;
-			}
-		}
-		.product-detail-top__attributes li{
-			padding-bottom: 10px;
-		}
-		.meter {
-			display: flex;
-			justify-content: space-between;
-		}
-		.meter > span {
-			padding-bottom: 5px;
-			width: calc((100% - 30px) / 4);
-			height: 0.3125rem;
-			border: 1px solid;
-		}
-		.meter.value-1 > span:nth-child(1) {
-		  background-color: #fff;
-		}
-		.meter.value-2 > span:nth-child(1) {
-		  background-color: #fff;
-		}
-		.meter.value-2 > span:nth-child(2) {
-		  background-color: #fff;
-		}
-		.meter.value-3 > span:nth-child(1) {
-		  background-color: #fff;
-		}
-		.meter.value-3 > span:nth-child(2) {
-		  background-color: #fff;
-		}
-		.meter.value-3 > span:nth-child(3) {
-		  background-color: #fff;
-		}
-		.meter.value-4 > span:nth-child(1) {
-		  background-color: #fff;
-		}
-		.meter.value-4 > span:nth-child(2) {
-		  background-color: #fff;
-		}
-		.meter.value-4 > span:nth-child(3) {
-		  background-color: #fff;
-		}
-		.meter.value-4 > span:nth-child(4) {
-		  background-color: #fff;
-		}
-		.meter.value-5 > span:nth-child(1) {
-		  background-color: #fff;
-		}
-		.meter.value-5 > span:nth-child(2) {
-		  background-color: #fff;
-		}
-		.meter.value-5 > span:nth-child(3) {
-		  background-color: #fff;
-		}
-		.meter.value-5 > span:nth-child(4) {
-		  background-color: #fff;
-		}
-		.meter.value-5 > span:nth-child(5) {
-		  background-color: #fff;
-		}
-		.product-detail-bottom{
-			padding-top: 12px;
-			border-top-color: rgba(255, 255, 255, 0.3);
-			border-top-style: solid;
-			border-top-width: 1px;
-			background-color: rgb(28, 45, 57);
-			color: rgb(255, 255, 255);
-		}
-		.product-detail-bottom__attributes{
-			list-style: none;
-			margin: 0;
-			text-align:left;
-			font-size: 16px;
-			font-weight: 400;
-		}
-		.product-detail-bottom__attributes li{
-			padding: 10px;
-		}
-		.product-detail-bottom__attributes-name{
-			color: rgb(166, 153, 137);
-		}
-		.bottomImg {
-		    max-width: -webkit-fill-available;
-		}
-		@media (min-width: 992px) {
-			.bottomImg {
-				max-width: 90px;
-			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		.coreTitle {
-			padding-top: 40px;
-			padding-bottom: 20px;
-			line-height: 26px;
-			text-align: center;
-			font-family: SoehneBreitBuch;
-			font-weight: 300;
-			font-size: 40px;
-			text-transform: uppercase;
-		}
-		.coreTitle2 {
-			color: #cc5300;
-			padding-top:80px;
-			margin-bottom: 26px;
-			font-family: SoehneBreitBuch;
-			font-size: 20px;
-			text-align: center;
-			text-transform: uppercase;
-		}
-		.coreLink {
-			
-		}
-		
-		.coreFooter{
-			padding-top: 30px;
-		}
-		
-	`	.coreVideoContainer {
-			position: relative;
-			text-align: center;
-			color: white;
-		}
+ /* Custom CSS for minor adjustments or overrides */
+.coreMenu{
+	background: #2a292e !important;/* Set menu background color same to log background */
+	text-transform: uppercase;
+}
+.coreBody{
+	background: #f8f9fa;/* Light grey background for body */
+	width:100%;
+     height:100vh;
+     overflow-x:hidden; /* Hide the scroll bar in X for iFrame */
+     margin:0px;
+     padding:0px;
+     border:none;
+}
+.corefooter {
+	padding-top: 30px;
+     background: #2a292e; /* Dark background for the footer */
+     color: white;
+     padding: 20px 0;
+     text-align: center;
+ }
+.footerLink{
+	color: rgb(166, 153, 137);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+}
 
-		.coreCentered {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-family: SoehneBreitBuch;
-			font-size: 54px;
-			color: #fff;
-		}
-		.coreWrapper{
-			position:relative;
-			left:5px;
-			top:3px;
-			background-image:url("img/showRoom.jpg");
-		}
+/* This will be the div content for all webpages */
+.hero-section {
+     background: #f8f9fa;/* Light grey background for the hero */
+     text-align: center;
+ }
 
-		.coreWord{
-			margin-top: -500px;
-			font-size:30px;
-			font-weight:bold;
-			color:#F0F0F0;
-			font-family: arial;
-			position:relative;
-			left:20px;
-			top:25px;
-		}
+.displayCN{
+	display:none; /* Hide the Chinese Content */
+}
 
-		
+.coreButton{
+	border-color:#000;
+	background-color:#fff;
+}
+.coreButton:hover{
+	border-color:#000;
+	background-color:#fff;
+}
+
+
+/* About Us Page CSS */
+.coreAboutUs{
+	background-color: #1c2d39;
+	margin-left: 30px;
+	margin-top: -100px;/* Let the div float on top of the image */
+	color: #fff;
+	padding-top:40px;
+	padding-bottom: 40px;
+	text-align: left;
+}
+
+/* Flooring and Wall Panel Listing Page CSS */
+.floorTitle{
+	color: rgb(44, 45, 51);
+	font-size: 26px;
+	font-weight: 400;
+}
+.floorSku{
+	color: rgb(166, 153, 137);
+	font-size: 11px;
+	font-weight: 400;
+}
+.floorDes {
+	font-size: 0.5625rem;
+	letter-spacing: 0.25em;
+	text-align: left;
+	padding-top:7px;
+}
+
+/* Common CSS for all pages */
+.coreTitle {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	line-height: 26px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.contactTitle {
+	padding-top: 100px;
+	padding-bottom: 30px;
+	border-bottom-color: rgb(46, 54, 59);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.coreSubTitle {
+	color: #cc5300;
+	padding-top:80px;
+	margin-bottom: 26px;
+	font-size: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.coreDes {
+	font-size: 16px;
+	text-align: left;
+}
+.coreDes p{
+	margin-bottom: 18px;
+	overflow-wrap: break-word;
+}
+
+
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    .navbar-brand{
+	.navbar-brand{
 		font-size: 16px; /* Adjust font size in phone view */
 	}
 	.coreAboutUs {
 		max-width: 85%; /* Avoid aboutUs oveflow in phone view*/
-    }
+	}
 	.coreTitle {
 		font-size: 20px; /* Adjust font size in phone view */
 	}

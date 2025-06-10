@@ -1,0 +1,74 @@
+[
+  {
+    "sku": "",
+    "title": "End Cap",
+    "name": "end-cap",
+    "display_image": "./img/Accessory/floor/end-cap.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Reducer",
+    "name": "reducer",
+    "display_image": "./img/Accessory/floor/reducer.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Stair Nose",
+    "name": "stair-nose",
+    "display_image": "./img/Accessory/floor/stair-nose.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "T Molding",
+    "name": "t-molding",
+    "display_image": "./img/Accessory/floor/t-molding.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  }
+]

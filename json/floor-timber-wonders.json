@@ -1,0 +1,724 @@
+[
+  {
+    "sku": "YPY3088-010",
+    "title": "FROSTILY",
+	"titleCN": "冷木纹",
+    "name": "frostily",
+    "display_image": "./img/Wooden-Design/YPY3088-010/YPY3088-010-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY3088-010/YPY3088-010-01.jpg",
+      "./img/Wooden-Design/YPY3088-010/YPY3088-010-02.jpg",
+      "./img/Wooden-Design/YPY3088-010/YPY3088-010-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY6011-008",
+    "title": "OAK ASH",
+	"titleCN": "橡木灰",
+    "name": "oak-ash",
+    "display_image": "./img/Wooden-Design/YPY6011-008/YPY6011-008-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY6011-008/YPY6011-008-01.jpg",
+      "./img/Wooden-Design/YPY6011-008/YPY6011-008-02.jpg",
+      "./img/Wooden-Design/YPY6011-008/YPY6011-008-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33013-002",
+    "title": "OLIVE BROWN",
+    "name": "olive-brown",
+    "display_image": "./img/Wooden-Design/YPY33013-002/YPY33013-002-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33013-002/YPY33013-002-01.jpg",
+      "./img/Wooden-Design/YPY33013-002/YPY33013-002-02.jpg",
+      "./img/Wooden-Design/YPY33013-002/YPY33013-002-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33013-003",
+    "title": "CINNAMON",
+    "name": "cinnamon",
+    "display_image": "./img/Wooden-Design/YPY33013-003/YPY33013-003-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33013-003/YPY33013-003-01.jpg",
+      "./img/Wooden-Design/YPY33013-003/YPY33013-003-02.jpg",
+      "./img/Wooden-Design/YPY33013-003/YPY33013-003-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33013-004",
+    "title": "VANILLA",
+    "name": "vanilla",
+    "display_image": "./img/Wooden-Design/YPY33013-004/YPY33013-004-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33013-004/YPY33013-004-01.jpg",
+      "./img/Wooden-Design/YPY33013-004/YPY33013-004-02.jpg",
+      "./img/Wooden-Design/YPY33013-004/YPY33013-004-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33014-001",
+    "title": "CHESTNUT",
+    "name": "chestnut",
+    "display_image": "./img/Wooden-Design/YPY33014-001/YPY33014-001-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33014-001/YPY33014-001-01.jpg",
+      "./img/Wooden-Design/YPY33014-001/YPY33014-001-02.jpg",
+      "./img/Wooden-Design/YPY33014-001/YPY33014-001-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33080-005",
+    "title": "TWILIGHT",
+    "name": "twilight",
+    "display_image": "./img/Wooden-Design/YPY33080-005/YPY33080-005-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33080-005/YPY33080-005-01.jpg",
+      "./img/Wooden-Design/YPY33080-005/YPY33080-005-02.jpg",
+      "./img/Wooden-Design/YPY33080-005/YPY33080-005-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YPY33080-007",
+    "title": "CAMELLIA",
+    "name": "camellia",
+    "display_image": "./img/Wooden-Design/YPY33080-007/YPY33080-007-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YPY33080-007/YPY33080-007-01.jpg",
+      "./img/Wooden-Design/YPY33080-007/YPY33080-007-02.jpg",
+      "./img/Wooden-Design/YPY33080-007/YPY33080-007-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "AMY1509-5",
+    "title": "White Sands",
+    "name": "white-sands",
+    "display_image": "./img/Wooden-Design/AMY1509-5/AMY1509-5-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/AMY1509-5/AMY1509-5-01.jpg",
+      "./img/Wooden-Design/AMY1509-5/AMY1509-5-02.jpg",
+      "./img/Wooden-Design/AMY1509-5/AMY1509-5-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "AMY1803-4",
+    "title": "Spruce Whitewash",
+    "name": "spruce-whitewash",
+    "display_image": "./img/Wooden-Design/AMY1803-4/AMY1803-4-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/AMY1803-4/AMY1803-4-01.jpg",
+      "./img/Wooden-Design/AMY1803-4/AMY1803-4-02.jpg",
+      "./img/Wooden-Design/AMY1803-4/AMY1803-4-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC201-9",
+    "title": "SNOW ASH",
+    "name": "snow-ash",
+    "display_image": "./img/Wooden-Design/TC201-9/TC201-9-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC201-9/TC201-9-01.jpg",
+      "./img/Wooden-Design/TC201-9/TC201-9-02.jpg",
+      "./img/Wooden-Design/TC201-9/TC201-9-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC203-20",
+    "title": "DOME ASH",
+    "name": "dome-ash",
+    "display_image": "./img/Wooden-Design/TC203-20/TC203-20-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC203-20/TC203-20-01.jpg",
+      "./img/Wooden-Design/TC203-20/TC203-20-02.jpg",
+      "./img/Wooden-Design/TC203-20/TC203-20-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC205-96",
+    "title": "SMOKE INK",
+    "name": "smoke-ink",
+    "display_image": "./img/Wooden-Design/TC205-96/TC205-96-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC205-96/TC205-96-01.jpg",
+      "./img/Wooden-Design/TC205-96/TC205-96-02.jpg",
+      "./img/Wooden-Design/TC205-96/TC205-96-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC205-97",
+    "title": "LIQUOR",
+    "name": "liquor",
+    "display_image": "./img/Wooden-Design/TC205-97/TC205-97-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC205-97/TC205-97-01.jpg",
+      "./img/Wooden-Design/TC205-97/TC205-97-02.jpg",
+      "./img/Wooden-Design/TC205-97/TC205-97-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC227-31",
+    "title": "FEATHER ASH",
+    "name": "feather-ash",
+    "display_image": "./img/Wooden-Design/TC227-31/TC227-31-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC227-31/TC227-31-01.jpg",
+      "./img/Wooden-Design/TC227-31/TC227-31-02.jpg",
+      "./img/Wooden-Design/TC227-31/TC227-31-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC285-1",
+    "title": "GARDENIA",
+    "name": "gardenia",
+    "display_image": "./img/Wooden-Design/TC285-1/TC285-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC285-1/TC285-1-01.jpg",
+      "./img/Wooden-Design/TC285-1/TC285-1-02.jpg",
+      "./img/Wooden-Design/TC285-1/TC285-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC285-2",
+    "title": "SALMON",
+    "name": "salmon",
+    "display_image": "./img/Wooden-Design/TC285-2/TC285-2-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC285-2/TC285-2-01.jpg",
+      "./img/Wooden-Design/TC285-2/TC285-2-02.jpg",
+      "./img/Wooden-Design/TC285-2/TC285-2-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC289-2",
+    "title": "SORREL",
+    "name": "sorrel",
+    "display_image": "./img/Wooden-Design/TC289-2/TC289-2-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC289-2/TC289-2-01.jpg",
+      "./img/Wooden-Design/TC289-2/TC289-2-02.jpg",
+      "./img/Wooden-Design/TC289-2/TC289-2-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC304-9",
+    "title": "AURORA",
+    "name": "aurora",
+    "display_image": "./img/Wooden-Design/TC304-9/TC304-9-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC304-9/TC304-9-01.jpg",
+      "./img/Wooden-Design/TC304-9/TC304-9-02.jpg",
+      "./img/Wooden-Design/TC304-9/TC304-9-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC380-8",
+    "title": "MOONSPACE",
+    "name": "moonspace",
+    "display_image": "./img/Wooden-Design/TC380-8/TC380-8-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC380-8/TC380-8-01.jpg",
+      "./img/Wooden-Design/TC380-8/TC380-8-02.jpg",
+      "./img/Wooden-Design/TC380-8/TC380-8-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC385-1",
+    "title": "RUST BROWN",
+    "name": "rust-brown",
+    "display_image": "./img/Wooden-Design/TC385-1/TC385-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC385-1/TC385-1-01.jpg",
+      "./img/Wooden-Design/TC385-1/TC385-1-02.jpg",
+      "./img/Wooden-Design/TC385-1/TC385-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC402-73",
+    "title": "OYSTER GREY",
+    "name": "oyster-grey",
+    "display_image": "./img/Wooden-Design/TC402-73/TC402-73-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC402-73/TC402-73-01.jpg",
+      "./img/Wooden-Design/TC402-73/TC402-73-02.jpg",
+      "./img/Wooden-Design/TC402-73/TC402-73-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC443-9",
+    "title": "LIVIDITY",
+    "name": "lividity",
+    "display_image": "./img/Wooden-Design/TC443-9/TC443-9-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC443-9/TC443-9-01.jpg",
+      "./img/Wooden-Design/TC443-9/TC443-9-02.jpg",
+      "./img/Wooden-Design/TC443-9/TC443-9-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "TC470-5",
+    "title": "PALE TAUPE",
+    "name": "pale-taupe",
+    "display_image": "./img/Wooden-Design/TC470-5/TC470-5-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/TC470-5/TC470-5-01.jpg",
+      "./img/Wooden-Design/TC470-5/TC470-5-02.jpg",
+      "./img/Wooden-Design/TC470-5/TC470-5-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YM19019",
+    "title": "BISQUE",
+    "name": "bisque",
+    "display_image": "./img/Wooden-Design/YM19019/YM19019-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YM19019/YM19019-01.jpg",
+      "./img/Wooden-Design/YM19019/YM19019-02.jpg",
+      "./img/Wooden-Design/YM19019/YM19019-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YM19025",
+    "title": "ONYX",
+    "name": "onyx",
+    "display_image": "./img/Wooden-Design/YM19025/YM19025-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YM19025/YM19025-01.jpg",
+      "./img/Wooden-Design/YM19025/YM19025-02.jpg",
+      "./img/Wooden-Design/YM19025/YM19025-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YM19026",
+    "title": "CRYSTAL",
+    "name": "crystal",
+    "display_image": "./img/Wooden-Design/YM19026/YM19026-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YM19026/YM19026-01.jpg",
+      "./img/Wooden-Design/YM19026/YM19026-02.jpg",
+      "./img/Wooden-Design/YM19026/YM19026-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YC0002-4",
+    "title": "CREAM",
+    "name": "cream",
+    "display_image": "./img/Wooden-Design/YC0002-4/YC0002-4-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YC0002-4/YC0002-4-01.jpg",
+      "./img/Wooden-Design/YC0002-4/YC0002-4-02.jpg",
+      "./img/Wooden-Design/YC0002-4/YC0002-4-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YC6003-18",
+    "title": "MISTY GREY",
+    "name": "misty-grey",
+    "display_image": "./img/Wooden-Design/YC6003-18/YC6003-18-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YC6003-18/YC6003-18-01.jpg",
+      "./img/Wooden-Design/YC6003-18/YC6003-18-02.jpg",
+      "./img/Wooden-Design/YC6003-18/YC6003-18-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YC8019-2",
+    "title": "RUSTIC BROWN",
+    "name": "rustic-brown",
+    "display_image": "./img/Wooden-Design/YC8019-2/YC8019-2-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YC8019-2/YC8019-2-01.jpg",
+      "./img/Wooden-Design/YC8019-2/YC8019-2-02.jpg",
+      "./img/Wooden-Design/YC8019-2/YC8019-2-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "YC81996-32",
+    "title": "PIGEON ASH",
+    "name": "pigeon-ash",
+    "display_image": "./img/Wooden-Design/YC81996-32/YC81996-32-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/YC81996-32/YC81996-32-01.jpg",
+      "./img/Wooden-Design/YC81996-32/YC81996-32-02.jpg",
+      "./img/Wooden-Design/YC81996-32/YC81996-32-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR4020-4",
+    "title": "Oak Vali",
+    "name": "oak-vali",
+    "display_image": "./img/Wooden-Design/FR4020-4/FR4020-4-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR4020-4/FR4020-4-01.jpg",
+      "./img/Wooden-Design/FR4020-4/FR4020-4-02.jpg",
+      "./img/Wooden-Design/FR4020-4/FR4020-4-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR4040-1",
+    "title": "Pine Natural ",
+    "name": "pine-natural-",
+    "display_image": "./img/Wooden-Design/FR4040-1/FR4040-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR4040-1/FR4040-1-01.jpg",
+      "./img/Wooden-Design/FR4040-1/FR4040-1-02.jpg",
+      "./img/Wooden-Design/FR4040-1/FR4040-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR4671-2",
+    "title": "Golden Oak ",
+    "name": "golden-oak-",
+    "display_image": "./img/Wooden-Design/FR4671-2/FR4671-2-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR4671-2/FR4671-2-01.jpg",
+      "./img/Wooden-Design/FR4671-2/FR4671-2-02.jpg",
+      "./img/Wooden-Design/FR4671-2/FR4671-2-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5001-1",
+    "title": "Phantom Grey",
+    "name": "phantom-grey",
+    "display_image": "./img/Wooden-Design/FR5001-1/FR5001-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5001-1/FR5001-1-01.jpg",
+      "./img/Wooden-Design/FR5001-1/FR5001-1-02.jpg",
+      "./img/Wooden-Design/FR5001-1/FR5001-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5002-2",
+    "title": "Bamboo Natural",
+    "name": "bamboo-natural",
+    "display_image": "./img/Wooden-Design/FR5002-2/FR5002-2-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5002-2/FR5002-2-01.jpg",
+      "./img/Wooden-Design/FR5002-2/FR5002-2-02.jpg",
+      "./img/Wooden-Design/FR5002-2/FR5002-2-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5003-17",
+    "title": "Oakwood Brown",
+    "name": "oakwood-brown",
+    "display_image": "./img/Wooden-Design/FR5003-17/FR5003-17-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5003-17/FR5003-17-01.jpg",
+      "./img/Wooden-Design/FR5003-17/FR5003-17-02.jpg",
+      "./img/Wooden-Design/FR5003-17/FR5003-17-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5006-1",
+    "title": "Antique Brown",
+    "name": "antique-brown",
+    "display_image": "./img/Wooden-Design/FR5006-1/FR5006-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5006-1/FR5006-1-01.jpg",
+      "./img/Wooden-Design/FR5006-1/FR5006-1-02.jpg",
+      "./img/Wooden-Design/FR5006-1/FR5006-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5007-1",
+    "title": "Honey Oak ",
+    "name": "honey-oak-",
+    "display_image": "./img/Wooden-Design/FR5007-1/FR5007-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5007-1/FR5007-1-01.jpg",
+      "./img/Wooden-Design/FR5007-1/FR5007-1-02.jpg",
+      "./img/Wooden-Design/FR5007-1/FR5007-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  },
+  {
+    "sku": "FR5008-1",
+    "title": "Cedar Rustic",
+    "name": "cedar-rustic",
+    "display_image": "./img/Wooden-Design/FR5008-1/FR5008-1-01-324x324.jpg",
+    "images": [
+      "./img/Wooden-Design/FR5008-1/FR5008-1-01.jpg",
+      "./img/Wooden-Design/FR5008-1/FR5008-1-02.jpg",
+      "./img/Wooden-Design/FR5008-1/FR5008-1-03.jpg"
+    ],
+    "description": "Infuse a little bit of island living into your design with the stunning style. The luxury rigid core SPC floor is as durable as it is beautiful; each plank is 100% waterproof and scratch resistant. The floor comes complete with embossed grain planks, easy click installation, and attached premium noise-reducing silence pad. It can withstand heavy foot traffic, making it suitable for both residential and commercial applications. Additionally, it is resistant to stains, making it easy to clean and maintain. The rigid core of SPC also provides dimensional stability, preventing the flooring from expanding or contracting due to temperature or humidity changes.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "7",
+    "length": "48",
+    "thickness": "5mm"
+  }
+]

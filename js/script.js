@@ -35,3 +35,13 @@ function switchDisplay() {
 	}
 }
 
+function variationToText(variation) {
+	if (variation <= 2) {
+		return "LOW";
+	} else if (variation >= 4) {
+		return "HIGH";
+	} else {
+		return "MODERATE";
+	}
+}
+

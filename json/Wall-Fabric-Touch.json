@@ -1,0 +1,92 @@
+[
+  {
+    "sku": "",
+    "title": "Ice Blue Mosaic",
+    "name": "Ice-Blue-Mosaic",
+    "display_image": "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/1-324x324.jpg",
+    "images": [
+      "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/1.webp",
+      "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/2.webp",
+      "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/3.webp"
+    ],
+    "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you're looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "250mm, 600mm, 1000mm",
+    "length": "2600mm",
+    "thickness": "5mm, 8mm, 10mm"
+  },
+  {
+    "sku": "",
+    "title": "Dusky",
+    "name": "Dusky",
+    "display_image": "./img/Wall-Panel/Fabric-Touch/Dusky/1-324x324.jpg",
+    "images": [
+      "./img/Wall-Panel/Fabric-Touch/Dusky/1.webp",
+      "./img/Wall-Panel/Fabric-Touch/Dusky/2.webp",
+      "./img/Wall-Panel/Fabric-Touch/Dusky/3.webp"
+    ],
+    "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you're looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "250mm, 600mm, 1000mm",
+    "length": "2600mm",
+    "thickness": "5mm, 8mm, 10mm"
+  },
+  {
+    "sku": "",
+    "title": "Textile Tweed",
+    "name": "Textile-Tweed",
+    "display_image": "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/1-324x324.jpg",
+    "images": [
+      "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/1.webp",
+      "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/2.webp",
+      "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/3.webp"
+    ],
+    "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you're looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "250mm, 600mm, 1000mm",
+    "length": "2600mm",
+    "thickness": "5mm, 8mm, 10mm"
+  },
+  {
+    "sku": "",
+    "title": "Powder Blue Mosaic",
+    "name": "Powder-Blue-Mosaic",
+    "display_image": "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/1-324x324.jpg",
+    "images": [
+      "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/1.webp",
+      "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/2.webp",
+      "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/3.webp"
+    ],
+    "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you're looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "250mm, 600mm, 1000mm",
+    "length": "2600mm",
+    "thickness": "5mm, 8mm, 10mm"
+  },
+  {
+    "sku": "",
+    "title": "Sheer",
+    "name": "Sheer",
+    "display_image": "./img/Wall-Panel/Fabric-Touch/Sheer/1-324x324.jpg",
+    "images": [
+      "./img/Wall-Panel/Fabric-Touch/Sheer/1.webp",
+      "./img/Wall-Panel/Fabric-Touch/Sheer/2.webp",
+      "./img/Wall-Panel/Fabric-Touch/Sheer/3.webp"
+    ],
+    "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you're looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+    "color_variation": 4,
+    "foot_traffic": 4,
+    "gloss": 0,
+    "width": "250mm, 600mm, 1000mm",
+    "length": "2600mm",
+    "thickness": "5mm, 8mm, 10mm"
+  }
+]

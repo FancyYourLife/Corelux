@@ -7,20 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	
-	<link href="css/css.css" rel="stylesheet">
-	<script src="js/script.js"></script>
+	<link href="./css/css.css" rel="stylesheet">
+	<script src="./js/script.js"></script>
+	
 	<script>
 	var currentImge = "";
-	function updatePhoto(x,y){
-		var image1 = "img/flooring/"+x+"/"+x+"-01.jpg";
-		var image2 = "img/flooring/"+x+"/"+x+"-02.jpg";
-		var image3 = "img/flooring/"+x+"/"+x+"-03.jpg";
+	function updatePhoto(sku,title,description,color_variation,foot_traffic,width, length, thickness){
+		var image1 = "./img/Wooden-Design/"+sku+"/"+sku+"-01.jpg";
+		var image2 = "./img/Wooden-Design/"+sku+"/"+sku+"-02.jpg";
+		var image3 = "./img/Wooden-Design/"+sku+"/"+sku+"-03.jpg";
 		//alert(image3);
-		currentImage = "http://corelux.com.sg/"+image1;
+		//Update Modal Copy URL
+		currentImage = "http://corelux.com.sg/img/Wooden-Design/"+sku+"/"+sku+"-01.jpg";
+		
+		//Update Modal Photo
 		document.getElementById("productImg1").src=image1;
 		document.getElementById("productImg2").src=image2;
 		document.getElementById("productImg3").src=image3;
-		document.getElementById("productName").innerText=y;
+		document.getElementById("productName").innerText=title;
+		document.getElementById("productDescription").innerHTML =description;
+		
+		//Update product-detail-top
+		document.getElementById("liColorVariation").childNodes[0].textContent ="Color Variation - " + variationToText(color_variation);
+		document.getElementById("divColorVariation").classList.remove("value-*");
+		document.getElementById("divColorVariation").classList.add("value-" + color_variation.toString());
+		document.getElementById("liFootTraffic").childNodes[0].textContent ="FOOT TRAFFIC - " + variationToText(foot_traffic);
+        document.getElementById("divFootTraffic").classList.remove("value-*");
+		document.getElementById("divFootTraffic").classList.add("value-" + foot_traffic.toString());
+		
+		//Update product-detail-bottom
+		document.getElementById("spanSKU").textContent = sku;
+		document.getElementById("spanWidth").textContent = width+"\"";
+		document.getElementById("spanLength").textContent = length+"\"";
+		document.getElementById("spanThickness").textContent = thickness;
 	}
 	</script>
 </head>
@@ -31,32 +50,31 @@
 		</div>
         <!-- This is a sample content webpage template -->
 		<!-- Your Content Start Here -->
-		<div class="container">
-            <div class="row" style="text-align:left;">
-				<div class="col-md-4">
-					<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updatePhoto('YPY3088-010','FROSTILY');" width="324" height="324" src="img/flooring/YPY3088-010/YPY3088-010-01-324x324.jpg" class="flooring-thumbnail" alt="FROSTILY" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
-					<h2 class="floorTitle displayEN">FROSTILY</h2>
-					<h2 class="floorTitle displayCN">冷木纹</h2>
-                    <div class="floorSku">YPY3088-010</div>
-				</div>
-				<div class="col-md-4">
-					<img width="324" height="324" src="img/flooring/YPY6011-008/YPY6011-008-01-324x324.jpg" class="flooring-thumbnail" alt="OAK" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-					<h2 class="floorTitle displayEN">OAK ASH</h2>
-					<h2 class="floorTitle displayCN">橡木灰</h2>
-                    <div class="floorSku">YPY6011-008</div>
-				</div>
-				<div class="col-md-4">
-					<img width="324" height="324" src="img/flooring/YPY33013-002/YPY33013-002-01-324x324.jpg" class="flooring-thumbnail" alt="OLIVE" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-					<h2 class="floorTitle displayEN">OLIVE BROWN</h2>
-					<h2 class="floorTitle displayCN">橄榄棕</h2>
-                    <div class="floorSku">YPY33013-002</div>
-				</div>
-			</div>
-			
-			
-			
-			
-<!-- The Modal -->
+		<div class="container">		
+			<div id="productList" class="row" style="text-align:left;"></div>
+			<script>
+			let ulProductList = document.getElementById("productList");
+				fetch("json/floor-timber-wonders.json").then((res) => res.json()).then((allProducts) => {
+					for (const index in allProducts) {
+						const product = allProducts[index];
+						//let hrefProperty ="";
+						ulProductList.insertAdjacentHTML(
+							"beforeend",
+							`
+							<div class="col-md-4">
+								<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updatePhoto('${product.sku}','${product.title}','${product.description}','${product.color_variation}','${product.foot_traffic}','${product.width}','${product.length}','${product.thickness}');" width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
+								<h2 class="floorTitle displayEN">${product.title}</h2>
+								<h2 class="floorTitle displayCN">${product.titleCN}</h2>
+								<div class="floorSku">${product.sku}</div>
+							</div>
+							`
+						);
+					}
+                });
+			</script>
+		</div>
+		
+<!-- The Modal Start-->
 <div class="modal" id="photoDetail">
   <div class="modal-dialog coreModal">
     <div class="modal-content">
@@ -67,7 +85,7 @@
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-			<div class="slideshow-container">
+			<div class="slideshow-container" style="padding-bottom:10px;">
 				<div class="row" style="text-align:left;">
 					<p class="floorDes">Water Resistant Laminate | 
 						<span >
@@ -99,13 +117,13 @@
 					<li class="page-item dotShow active"><a class="page-link" href="#"onclick="currentSlide(3)"></a></li>
  				</ul>
 				<div class="mySlides " style="display: none;">
-                    <img style="width: 100%" id="productImg1" src="img/flooring/YPY3088-010/YPY3088-010-01.jpg">
+                    <img style="width: 100%" id="productImg1" src="#">
                 </div>
                 <div class="mySlides " style="display: none;">
-                    <img style="width: 100%" id="productImg2" src="img/flooring/YPY3088-010/YPY3088-010-02.jpg">
+                    <img style="width: 100%" id="productImg2" src="#">
                 </div>
 				<div class="mySlides " style="display: block;">
-                    <img style="width: 100%" id="productImg3" src="img/flooring/YPY3088-010/YPY3088-010-03.jpg">
+                    <img style="width: 100%" id="productImg3" src="#">
                 </div>
 				<br/>
 				<button type="button" class="btn coreButton"  onclick="plusSlides(-1)">Previous</button>
@@ -122,7 +140,7 @@
                     function currentSlide(n) {
                       showSlides((slideIndex = n));
                     }
-
+					
                     function showSlides(n) {
                       let i;
                       let slides = document.getElementsByClassName("mySlides");
@@ -145,14 +163,74 @@
                 </script>
             </div>
 			
+			<div class="row product-detail-top">
+				<div class="col-md-6">
+					<p class="product-description" id="productDescription"></p>
+				</div>
+				<div class="col-md-6">
+					<ul class="product-detail-top__attributes">
+                      <li id="liColorVariation">Color Variation - Low
+                        <div id="divColorVariation" class="meter" aria-hidden="true">
+                          <span></span><span></span><span></span><span></span>
+                        </div>
+                      </li>
+                      <li id="liFootTraffic">Foot Traffic - High
+						<div id="divFootTraffic" class="meter" aria-hidden="true">
+                          <span></span><span></span><span></span><span></span>
+                        </div>
+                      </li>
+                      <li>Gloss - Matte
+                        <div class="meter value-" aria-hidden="true">
+                          <span></span><span></span><span></span><span></span>
+                        </div>
+                      </li>
+                    </ul>
+				</div>
+			</div>
 			
-			
-			
-			
-			
-			
-			
-			
+			<div class="row product-detail-bottom">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<img class="bottomImg" src="./img/floor-product_files/35-Year-Warranty-icon.png" alt=""/>
+					<p>35 Year Finish Warranty</p>
+				</div>
+				<div class="col-md-2">
+					<img class="bottomImg" src="./img/floor-product_files/waterproof-icon.png" alt=""/>
+					<p>100% Waterproof Surface</p>
+				</div>
+				<div class="col-md-2">
+					<img class="bottomImg" src="./img/floor-product_files/Micro-Bevel-Edge-icon.png" alt="" />
+					<p>Micro Bevelled</p>
+				</div>
+				<div class="col-md-2">
+					<img class="bottomImg" src="./img/floor-product_files/EmbossedGrainFinish-icon.png" alt=""/>
+					<p>Embossed Grain</p>
+				</div>
+				<div class="col-md-2">
+					<img class="bottomImg" src="./img/floor-product_files/Smoothfinish-icon.png" alt=""/>
+					<p>Smooth Texture</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row product-detail-bottom">
+				<div class="col-md-6">
+					<ul class="product-detail-bottom__attributes">
+						<li><span class="product-detail-bottom__attributes-name">SKU: </span><span class="product-detail-bottom__attributes-value" id="spanSKU">BLVD-201WI</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Collection: </span><span class="product-detail-bottom__attributes-value">Timber Wonders</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Structure: </span><span class="product-detail-bottom__attributes-value" >Premium Water Resistant Laminate</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Width: </span><span class="product-detail-bottom__attributes-value" id="spanWidth" >7"</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Length: </span><span class="product-detail-bottom__attributes-value" id="spanLength">59"</span></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="product-detail-bottom__attributes">
+						<li><span class="product-detail-bottom__attributes-name">Thickness: </span><span class="product-detail-bottom__attributes-value" id="spanThickness">5mm</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Wear Layer: </span> <span class="product-detail-bottom__attributes-value" >Textured Wear-Resistant Overlay</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Install Type: </span><span class="product-detail-bottom__attributes-value" >Angle Tap</span></li>
+						<li><span class="product-detail-bottom__attributes-name">Sq.Ft./Box: </span><span class="product-detail-bottom__attributes-value">17.24</span></li>	
+					</ul>
+				</div>
+			</div>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
@@ -161,706 +239,9 @@
     </div>
   </div>
 </div>
-			
-			
-			
-			
-			
-			
-			
-			
-        </div>
+<!-- The Modal End-->			
+
 		<!-- Your Content End Here -->
-		
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-<!--
-
-
-
-
-
-
-
-
-
-
-<main id="main" class="site-main" role="main">
-            <ul class="products columns-3" id="productList"><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-              
-              
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=cinnamon" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YPY33013-003/YPY33013-003-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="CINNAMON" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">CINNAMON</h2>
-                      <div class="woocommerce-loop-product__sku">YPY33013-003</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=vanilla" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YPY33013-004/YPY33013-004-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="VANILLA" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">VANILLA</h2>
-                      <div class="woocommerce-loop-product__sku">YPY33013-004</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=chestnut" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YPY33014-001/YPY33014-001-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="CHESTNUT" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">CHESTNUT</h2>
-                      <div class="woocommerce-loop-product__sku">YPY33014-001</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=twilight" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YPY33080-005/YPY33080-005-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="TWILIGHT" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">TWILIGHT</h2>
-                      <div class="woocommerce-loop-product__sku">YPY33080-005</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=camellia" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YPY33080-007/YPY33080-007-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="CAMELLIA" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">CAMELLIA</h2>
-                      <div class="woocommerce-loop-product__sku">YPY33080-007</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=white-sands" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/AMY1509-5/AMY1509-5-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="White" sands="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">White Sands</h2>
-                      <div class="woocommerce-loop-product__sku">AMY1509-5</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=spruce-whitewash" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/AMY1803-4/AMY1803-4-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Spruce" whitewash="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Spruce Whitewash</h2>
-                      <div class="woocommerce-loop-product__sku">AMY1803-4</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=snow-ash" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC201-9/TC201-9-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="SNOW" ash="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">SNOW ASH</h2>
-                      <div class="woocommerce-loop-product__sku">TC201-9</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=dome-ash" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC203-20/TC203-20-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="DOME" ash="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">DOME ASH</h2>
-                      <div class="woocommerce-loop-product__sku">TC203-20</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=smoke-ink" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC205-96/TC205-96-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="SMOKE" ink="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">SMOKE INK</h2>
-                      <div class="woocommerce-loop-product__sku">TC205-96</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=liquor" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC205-97/TC205-97-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="LIQUOR" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">LIQUOR</h2>
-                      <div class="woocommerce-loop-product__sku">TC205-97</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=feather-ash" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC227-31/TC227-31-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="FEATHER" ash="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">FEATHER ASH</h2>
-                      <div class="woocommerce-loop-product__sku">TC227-31</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=gardenia" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC285-1/TC285-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="GARDENIA" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">GARDENIA</h2>
-                      <div class="woocommerce-loop-product__sku">TC285-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=salmon" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC285-2/TC285-2-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="SALMON" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">SALMON</h2>
-                      <div class="woocommerce-loop-product__sku">TC285-2</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=sorrel" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC289-2/TC289-2-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="SORREL" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">SORREL</h2>
-                      <div class="woocommerce-loop-product__sku">TC289-2</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=aurora" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC304-9/TC304-9-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="AURORA" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">AURORA</h2>
-                      <div class="woocommerce-loop-product__sku">TC304-9</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=moonspace" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC380-8/TC380-8-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="MOONSPACE" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">MOONSPACE</h2>
-                      <div class="woocommerce-loop-product__sku">TC380-8</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=rust-brown" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC385-1/TC385-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="RUST" brown="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">RUST BROWN</h2>
-                      <div class="woocommerce-loop-product__sku">TC385-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=oyster-grey" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC402-73/TC402-73-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="OYSTER" grey="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">OYSTER GREY</h2>
-                      <div class="woocommerce-loop-product__sku">TC402-73</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=lividity" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC443-9/TC443-9-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="LIVIDITY" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">LIVIDITY</h2>
-                      <div class="woocommerce-loop-product__sku">TC443-9</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=pale-taupe" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/TC470-5/TC470-5-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="PALE" taupe="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">PALE TAUPE</h2>
-                      <div class="woocommerce-loop-product__sku">TC470-5</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=bisque" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YM19019/YM19019-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="BISQUE" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">BISQUE</h2>
-                      <div class="woocommerce-loop-product__sku">YM19019</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=onyx" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YM19025/YM19025-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="ONYX" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">ONYX</h2>
-                      <div class="woocommerce-loop-product__sku">YM19025</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=crystal" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YM19026/YM19026-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="CRYSTAL" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">CRYSTAL</h2>
-                      <div class="woocommerce-loop-product__sku">YM19026</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=cream" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YC0002-4/YC0002-4-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="CREAM" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">CREAM</h2>
-                      <div class="woocommerce-loop-product__sku">YC0002-4</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=misty-grey" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YC6003-18/YC6003-18-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="MISTY" grey="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">MISTY GREY</h2>
-                      <div class="woocommerce-loop-product__sku">YC6003-18</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=rustic-brown" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YC8019-2/YC8019-2-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="RUSTIC" brown="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">RUSTIC BROWN</h2>
-                      <div class="woocommerce-loop-product__sku">YC8019-2</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=pigeon-ash" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/YC81996-32/YC81996-32-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="PIGEON" ash="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">PIGEON ASH</h2>
-                      <div class="woocommerce-loop-product__sku">YC81996-32</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=oak-vali" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR4020-4/FR4020-4-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Oak" vali="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Oak Vali</h2>
-                      <div class="woocommerce-loop-product__sku">FR4020-4</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=pine-natural-" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR4040-1/FR4040-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Pine" natural="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Pine Natural </h2>
-                      <div class="woocommerce-loop-product__sku">FR4040-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=golden-oak-" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR4671-2/FR4671-2-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Golden" oak="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Golden Oak </h2>
-                      <div class="woocommerce-loop-product__sku">FR4671-2</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=phantom-grey" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5001-1/FR5001-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Phantom" grey="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Phantom Grey</h2>
-                      <div class="woocommerce-loop-product__sku">FR5001-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=bamboo-natural" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5002-2/FR5002-2-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Bamboo" natural="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Bamboo Natural</h2>
-                      <div class="woocommerce-loop-product__sku">FR5002-2</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=oakwood-brown" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5003-17/FR5003-17-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Oakwood" brown="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Oakwood Brown</h2>
-                      <div class="woocommerce-loop-product__sku">FR5003-17</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=antique-brown" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5006-1/FR5006-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Antique" brown="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Antique Brown</h2>
-                      <div class="woocommerce-loop-product__sku">FR5006-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=honey-oak-" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5007-1/FR5007-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Honey" oak="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Honey Oak </h2>
-                      <div class="woocommerce-loop-product__sku">FR5007-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li><li class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                <a href="floor-product.html?cat=floor-timber-wonders&amp;&amp;product=cedar-rustic" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img width="324" height="324" src="./uploads/images/Wooden-Design/FR5008-1/FR5008-1-01-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed" alt="Cedar" rustic="" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">Cedar Rustic</h2>
-                      <div class="woocommerce-loop-product__sku">FR5008-1</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a>
-              </li></ul>
-            <script>
-              function setTitle(category) {
-                if (category == 'floor-timber-wonders') {
-                  document.title = "Timber Wonders";
-                }else if (category == 'floor-stone-marvels') {
-                  document.title = "Stone Marvels";
-                }else if (category == 'Wall-Stone-Design') {
-                  document.title = "Wall Panel Stone Series";
-                }else if (category == 'Wall-Wood-Design') {
-                  document.title = "Wall Panel Wood Series";
-                }else if (category == 'Wall-Fabric-Touch') {
-                  document.title = "Wall Panel Fabric Touch";
-                }else if (category == 'Wall-Leather-Luxe') {
-                  document.title = "Wall Panel Leather Luxe";
-                }else if (category == 'accessory-floor') {
-                  document.title = "Accessory for Floor";
-                }
-              }
-
-              const urlParams = new URLSearchParams(window.location.search);
-              const category = urlParams.get("cat");
-              setTitle(category);
-              let ulProductList = document.getElementById("productList");
-              fetch("json/" + category + ".json")
-                .then((res) => res.json())
-                .then((allProducts) => {
-                  for (const index in allProducts) {
-                    const product = allProducts[index];
-                    let hrefProperty = `href="floor-product.html?cat=${category}&&product=${product.name}"`;
-                    if (category == "accessory-floor" || category == "accessory-wall") {
-                      hrefProperty = "";
-                    }
-                    
-                    ulProductList.insertAdjacentHTML(
-                      "beforeend",
-                      `<li
-                class="product type-product post-134 status-publish first instock product_cat-cascade product_cat-fine-sand has-post-thumbnail shipping-taxable purchasable product-type-simple"
-              >
-                <a
-                  ${hrefProperty}
-                  class="woocommerce-LoopProduct-link woocommerce-loop-product__link"
-                  ><div class="woocommerce-loop-product__thumbnail-wrapper">
-                    <img
-                      width="324"
-                      height="324"
-                      src=${product.display_image}
-                      class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail is-revealed"
-                      alt=${product.title}
-                      loading="lazy"
-                      sizes="(max-width: 324px) 100vw, 324px"
-                    />
-                  </div>
-                  <div class="woocommerce-loop-product__meta-wrapper">
-                    <div class="woocommerce-loop-product__meta">
-                      <h2 class="woocommerce-loop-product__title">${product.title}</h2>
-                      <div class="woocommerce-loop-product__sku">${product.sku}</div>
-                      <div class="d-none woocommerce-loop-product__price">
-                        Economic
-                      </div>
-                      <div class="d-none woocommerce-loop-product__width">
-                        7"
-                      </div>
-                    </div>
-                  </div></a
-                >
-              </li>`
-                    );
-                  }
-                });
-            </script>
-          </main>
--->

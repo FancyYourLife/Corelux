@@ -1,0 +1,110 @@
+[
+  {
+    "sku": "",
+    "title": "End Cap",
+    "name": "end-cap",
+    "display_image": "./img/Accessory/wall/end-cap.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "H Joint",
+    "name": "h-joint",
+    "display_image": "./img/Accessory/wall/h-joint.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Interior Trim",
+    "name": "interior-trim",
+    "display_image": "./img/Accessory/wall/interior-trim.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Square Exterior Trim",
+    "name": "square-exterior-trim",
+    "display_image": "./img/Accessory/wall/square-exterior-trim.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Angle Exterior Trim",
+    "name": "angle-exterior-trim",
+    "display_image": "./img/Accessory/wall/angle-exterior-trim.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  },
+  {
+    "sku": "",
+    "title": "Round Exterior Trim",
+    "name": "round-exterior-trim",
+    "display_image": "./img/Accessory/wall/round-exterior-trim.png",
+    "images": [
+      ".",
+      "",
+      ""
+    ],
+    "description": "",
+    "color_variation": 0,
+    "foot_traffic": 0,
+    "gloss": 0,
+    "width": "",
+    "length": "2",
+    "thickness": ""
+  }
+]

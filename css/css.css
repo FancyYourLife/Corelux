@@ -49,7 +49,7 @@
 			text-align: left;
 		}
 		
-		/* Flooring Page CSS */
+		/* Flooring and Wall Panel Listing Page CSS */
 		.floorTitle{
 			color: rgb(44, 45, 51);
 			font-family: SoehneBreitLeicht;
@@ -69,6 +69,128 @@
 			text-align: left;
 			padding-top:7px;
 		}
+		.product-detail-top{
+			background-color: rgb(28, 45, 57);
+		}
+		.product-description{
+			text-align: left;
+			padding-bottom: 5px;
+			color: rgb(255, 255, 255);
+			font-family: IskryRegular;
+			font-size: 13.008px;
+			font-weight: 400;
+		}
+		.product-detail-top{
+			padding-top: 5px;
+		}
+		.product-detail-top__attributes{
+			list-style: none;
+			margin: 0;
+			color: rgb(255, 255, 255);
+			text-align: left;
+		    text-transform: uppercase;
+			font-family: IskryRegular;
+			font-size: 13.008px;
+			font-weight: 400;
+		}	
+		@media (min-width: 992px) {
+			.product-detail-top__attributes {
+				flex: 1 0 31%;
+				margin-left: 7.916666vw;
+			}
+		}
+		.product-detail-top__attributes li{
+			padding-bottom: 10px;
+		}
+		.meter {
+			display: flex;
+			justify-content: space-between;
+		}
+		.meter > span {
+			padding-bottom: 5px;
+			width: calc((100% - 30px) / 4);
+			height: 0.3125rem;
+			border: 1px solid;
+		}
+		.meter.value-1 > span:nth-child(1) {
+		  background-color: #fff;
+		}
+		.meter.value-2 > span:nth-child(1) {
+		  background-color: #fff;
+		}
+		.meter.value-2 > span:nth-child(2) {
+		  background-color: #fff;
+		}
+		.meter.value-3 > span:nth-child(1) {
+		  background-color: #fff;
+		}
+		.meter.value-3 > span:nth-child(2) {
+		  background-color: #fff;
+		}
+		.meter.value-3 > span:nth-child(3) {
+		  background-color: #fff;
+		}
+		.meter.value-4 > span:nth-child(1) {
+		  background-color: #fff;
+		}
+		.meter.value-4 > span:nth-child(2) {
+		  background-color: #fff;
+		}
+		.meter.value-4 > span:nth-child(3) {
+		  background-color: #fff;
+		}
+		.meter.value-4 > span:nth-child(4) {
+		  background-color: #fff;
+		}
+		.meter.value-5 > span:nth-child(1) {
+		  background-color: #fff;
+		}
+		.meter.value-5 > span:nth-child(2) {
+		  background-color: #fff;
+		}
+		.meter.value-5 > span:nth-child(3) {
+		  background-color: #fff;
+		}
+		.meter.value-5 > span:nth-child(4) {
+		  background-color: #fff;
+		}
+		.meter.value-5 > span:nth-child(5) {
+		  background-color: #fff;
+		}
+		.product-detail-bottom{
+			padding-top: 12px;
+			border-top-color: rgba(255, 255, 255, 0.3);
+			border-top-style: solid;
+			border-top-width: 1px;
+			background-color: rgb(28, 45, 57);
+			color: rgb(255, 255, 255);
+		}
+		.product-detail-bottom__attributes{
+			list-style: none;
+			margin: 0;
+			text-align:left;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.product-detail-bottom__attributes li{
+			padding: 10px;
+		}
+		.product-detail-bottom__attributes-name{
+			color: rgb(166, 153, 137);
+		}
+		.bottomImg {
+		    max-width: -webkit-fill-available;
+		}
+		@media (min-width: 992px) {
+			.bottomImg {
+				max-width: 90px;
+			}
+		}
+		
+		
+		
+		
+		
 		
 		
 		
@@ -142,6 +264,7 @@
 			left:20px;
 			top:25px;
 		}
+
 		
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {

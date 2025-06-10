@@ -15,3 +15,9 @@ File Explorer> Right Click on "This PC" > Click "Manage" > Click "Services and A
 Note:
 1. In IIS add MIME type ".webp" for "text/html", else the images with ".webp" cannot display properly.
 2. Do not put any ' or " in JSON file, it will cause the webpage not loading properly.
+
+
+
+
+Reference Website:
+https://www.weiken.com/

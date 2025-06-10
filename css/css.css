@@ -1,4 +1,7 @@
  /* Custom CSS for minor adjustments or overrides */
+ body {
+    font-family: Roboto, Arial, Helvetica sans-serif;
+ }
 .coreMenu{
 	background: #2a292e !important;/* Set menu background color same to log background */
 	text-transform: uppercase;
@@ -6,18 +9,17 @@
 .coreBody{
 	background: #f8f9fa;/* Light grey background for body */
 	width:100%;
-     height:100vh;
-     overflow-x:hidden; /* Hide the scroll bar in X for iFrame */
-     margin:0px;
-     padding:0px;
-     border:none;
+    overflow-x:hidden; /* Hide the scroll bar in X for iFrame */
+    margin:0px;
+    padding:0px;
+    border:none;
 }
 .corefooter {
 	padding-top: 30px;
-     background: #2a292e; /* Dark background for the footer */
-     color: white;
-     padding: 20px 0;
-     text-align: center;
+    background: #2a292e; /* Dark background for the footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
  }
 .footerLink{
 	color: rgb(166, 153, 137);
@@ -28,8 +30,8 @@
 
 /* This will be the div content for all webpages */
 .hero-section {
-     background: #f8f9fa;/* Light grey background for the hero */
-     text-align: center;
+    background: #f8f9fa;/* Light grey background for the hero */
+    text-align: center;
  }
 
 .displayCN{
@@ -125,6 +127,9 @@
 
 /* Responsive Adjustments */
 @media screen and (min-width: 768px) {
+	.coreBody{
+		height:100vh;    
+	}
 	.coreModal{
 		max-width: 80%;
 		max-width: 1024px;

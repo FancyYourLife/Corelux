@@ -1,4 +1,5 @@
- /* Custom CSS for minor adjustments or overrides */
+/* Custom CSS for minor adjustments or overrides */
+/* Common CSS for all pages Start */
  body {
     font-family: Roboto, Arial, Helvetica sans-serif;
  }
@@ -9,10 +10,12 @@
 .coreBody{
 	background: #f8f9fa;/* Light grey background for body */
 	width:100%;
-    overflow-x:hidden; /* Hide the scroll bar in X for iFrame */
-    margin:0px;
+    overflow-x:hidden; /* Hide the scroll bar in X*/
+    /*
+	margin:0px;
     padding:0px;
     border:none;
+	*/
 }
 .corefooter {
 	padding-top: 30px;
@@ -28,7 +31,6 @@
 	font-weight: 400;
 }
 
-/* This will be the div content for all webpages */
 .hero-section {
     background: #f8f9fa;/* Light grey background for the hero */
     text-align: center;
@@ -47,37 +49,6 @@
 	background-color:#fff;
 }
 
-
-/* About Us Page CSS */
-.coreAboutUs{
-	background-color: #1c2d39;
-	margin-left: 30px;
-	margin-top: -100px;/* Let the div float on top of the image */
-	color: #fff;
-	padding-top:40px;
-	padding-bottom: 40px;
-	text-align: left;
-}
-
-/* Flooring and Wall Panel Listing Page CSS */
-.floorTitle{
-	color: rgb(44, 45, 51);
-	font-size: 26px;
-	font-weight: 400;
-}
-.floorSku{
-	color: rgb(166, 153, 137);
-	font-size: 11px;
-	font-weight: 400;
-}
-.floorDes {
-	font-size: 0.5625rem;
-	letter-spacing: 0.25em;
-	text-align: left;
-	padding-top:7px;
-}
-
-/* Common CSS for all pages */
 .coreTitle {
 	padding-top: 40px;
 	padding-bottom: 20px;
@@ -110,7 +81,161 @@
 	margin-bottom: 18px;
 	overflow-wrap: break-word;
 }
+/* Common CSS for all pages End */
 
+/* About Us Page CSS Start */
+.coreAboutUs{
+	background-color: #1c2d39;
+	margin-left: 30px;
+	margin-top: -100px;/* Let the div float on top of the image */
+	color: #fff;
+	padding-top:40px;
+	padding-bottom: 40px;
+	text-align: left;
+}
+/* About Us Page CSS End */
+
+/* Flooring and Wall Panel Listing Page CSS Start */
+.floorTitle{
+	color: rgb(44, 45, 51);
+	font-size: 26px;
+	font-weight: 400;
+}
+.floorSku{
+	color: rgb(166, 153, 137);
+	font-size: 11px;
+	font-weight: 400;
+}
+.floorDes {
+	font-size: 0.5625rem;
+	letter-spacing: 0.25em;
+	text-align: left;
+	padding-top:7px;
+}
+/* Flooring and Wall Panel Listing Page CSS End */
+
+/* Modal Related CSS Start */
+.product-detail-top{
+	background-color: rgb(28, 45, 57);
+}
+.product-description{
+	text-align: left;
+	padding-bottom: 5px;
+	color: rgb(255, 255, 255);
+	font-size: 13.008px;
+	font-weight: 400;
+}
+.product-detail-top{
+	padding-top: 10px;
+}
+.product-detail-top__attributes{
+	list-style: none;
+	margin: 0;
+	color: rgb(255, 255, 255);
+	text-align: left;
+    text-transform: uppercase;
+	font-size: 13.008px;
+	font-weight: 400;
+}	
+@media (min-width: 992px) {
+	.product-detail-top__attributes {
+		flex: 1 0 31%;
+		margin-left: 7.916666vw;
+	}
+}
+.product-detail-top__attributes li{
+	padding-bottom: 10px;
+}
+.meter {
+	display: flex;
+	justify-content: space-between;
+}
+.meter > span {
+	padding-bottom: 5px;
+	width: calc((100% - 30px) / 4);
+	height: 0.3125rem;
+	border: 1px solid;
+}
+.meter.value-1 > span:nth-child(1) {
+  background-color: #fff;
+}
+.meter.value-2 > span:nth-child(1) {
+  background-color: #fff;
+}
+.meter.value-2 > span:nth-child(2) {
+  background-color: #fff;
+}
+.meter.value-3 > span:nth-child(1) {
+  background-color: #fff;
+}
+.meter.value-3 > span:nth-child(2) {
+  background-color: #fff;
+}
+.meter.value-3 > span:nth-child(3) {
+  background-color: #fff;
+}
+.meter.value-4 > span:nth-child(1) {
+  background-color: #fff;
+}
+.meter.value-4 > span:nth-child(2) {
+  background-color: #fff;
+}
+.meter.value-4 > span:nth-child(3) {
+  background-color: #fff;
+}
+.meter.value-4 > span:nth-child(4) {
+  background-color: #fff;
+}
+.meter.value-5 > span:nth-child(1) {
+  background-color: #fff;
+}
+.meter.value-5 > span:nth-child(2) {
+  background-color: #fff;
+}
+.meter.value-5 > span:nth-child(3) {
+  background-color: #fff;
+}
+.meter.value-5 > span:nth-child(4) {
+  background-color: #fff;
+}
+.meter.value-5 > span:nth-child(5) {
+  background-color: #fff;
+}
+.product-detail-bottom{
+	padding-top: 12px;
+	border-top-color: rgba(255, 255, 255, 0.3);
+	border-top-style: solid;
+	border-top-width: 1px;
+	background-color: rgb(28, 45, 57);
+	color: rgb(255, 255, 255);
+}
+.product-detail-bottom__attributes{
+	list-style: none;
+	margin: 0;
+	text-align:left;
+	font-size: 16px;
+	font-weight: 400;
+}
+.product-detail-bottom__attributes li{
+	padding: 10px;
+}
+.product-detail-bottom__attributes-name{
+	color: rgb(166, 153, 137);
+}
+.bottomImg {
+    max-width: -webkit-fill-available;
+}
+@media (min-width: 992px) {
+	.bottomImg {
+		max-width: 90px;
+	}
+}
+@media (max-width: 992px) {
+	.bottomImg {
+		max-width: 110px;
+	}
+}
+/* Modal Related CSS End */
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
@@ -125,7 +250,6 @@
 	}
 }
 
-/* Responsive Adjustments */
 @media screen and (min-width: 768px) {
 	.coreBody{
 		height:100vh;    

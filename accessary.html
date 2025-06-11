@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORELUX INTERIOR SUPPLY</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	
-	<link href="./css/css.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	
+	<!--Bootstrap CSS and Script-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!--Menu Bar CSS and Script-->
+    <link rel="stylesheet" href="css/bootnavbar.css" />
+	<script src="./js/bootnavbar.js"></script>
+	
+	<!--Webpage Main CSS and Script-->
 	<script src="./js/script.js"></script>
-</head>
-<body class="coreBody">
+	<link rel="stylesheet" href="./css/css.css">
+	
+	<!--Webpage Title, description and keywords-->
+    <title>CORELUX INTERIOR SUPPLY</title>
+    <meta name="description" content="CORELUX INTERIOR SUPPLY"/>
+    <meta name="keywords" content="CORELUX INTERIOR SUPPLY"/>	
+  </head>
+
+  <body class="coreBody">
+	<!--Menu Start-->
+	<div id="menuBar" menu-include-html="./menu.html"></div>
+	<!--Menu End-->
+	
+	<!--Web Content Start-->
 	<div class="hero-section">
 		<div class="row">
 			<div class="col-md-12" style="text-align:right; z-index:999"><button class="btn coreButton" onclick="switchDisplay();">En/中</button></div>
 		</div>
-        <!-- This is a sample content webpage template -->
 		<!-- Your Content Start Here -->
 		<div class="container">
 			<header>
@@ -69,6 +88,18 @@
 		
 
 		<!-- Your Content End Here -->
+		
     </div>
-</body>
+	<!--Web Content End-->
+	
+	<!--Footer Start-->
+	<div id="footerBar" footer-include-html="./footer.html"></div>
+	<!--Footer End-->
+
+<script>
+includeMenu();
+includeFooter();
+</script>	
+
+	</body>
 </html>

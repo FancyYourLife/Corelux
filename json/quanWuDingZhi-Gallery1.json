@@ -1,0 +1,36 @@
+[
+  {
+    "sku": "Aidar-Obosov",
+    "title": "Black, White & Gray Style Beauty",
+	"titleCN": "黑白灰的格调美",
+    "name": "Black White & Gray",
+    "display_image": "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/0.jpg",
+    "images": [
+      "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/1.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/2.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/3.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/4.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/5.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Aidar-Obosov/6.jpg"
+    ],
+    "description": "The Black, White & Gray style in interior design and renovation embodies a timeless and sophisticated aesthetic, characterized by its elegant simplicity and striking contrasts. This classic palette transcends trends, offering a versatile foundation for a myriad of design expressions. Black elements, often used for bold accents, architectural details, or furniture, provide depth and drama, grounding the space with a sense of formality and power. White, conversely, brings an expansive and airy feel, enhancing natural light and creating a clean, pristine backdrop that allows other elements to truly pop.",
+	"descriptionCN":"室内设计和装修中的黑白灰风格体现了一种永恒而精致的美学，其特点是优雅的简约和鲜明的对比。这种经典的色调超越了潮流，为各种设计表达提供了灵活的基础。黑色元素常用于大胆的点缀、建筑细节或家具，赋予空间深度和戏剧性，营造出一种正式感和力量感。相反，白色则带来一种宽敞通透的感觉，增强了自然光线，并营造出干净、质朴的背景，使其他元素更加突出。"
+  },
+  {
+    "sku": "Alexander-Savinov",
+    "title": "High-grade Gray",
+	"titleCN": "高级灰质感",
+    "name": "High-grade Gray",
+    "display_image": "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/0.jpg",
+    "images": [
+      "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/1.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/2.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/3.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/4.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/5.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Alexander-Savinov/6.jpg"
+    ],
+    "description": "High-grade Gray style elevates interior design through meticulous attention to tonal variations and sophisticated material selections. Far from being drab, this approach leverages gray inherent neutrality to create calm, balanced, and luxurious spaces. Think polished concrete, fine wools, rich limestones, and sleek metallics, all in varying shades of gray. The focus is on subtle layering of textures and finishes, creating depth and visual interest without relying on vibrant colors. Strategic lighting further enhances these nuances, casting shadows and highlights that bring the refined palette to life. It is a testament to understated elegance and timeless appeal.",
+	"descriptionCN":"高端灰色风格通过对色调变化和精良材料选择的细致考量，提升室内设计的格调。这种风格绝非单调乏味，而是充分利用灰色本身的中性，营造出平静、平衡、奢华的空间。想象一下，抛光混凝土、细腻的羊毛、厚重的石灰岩和光滑的金属，所有这些都呈现出不同的灰色调。其重点在于纹理和饰面的微妙层次，无需依赖鲜艳的色彩，即可营造出层次感和视觉趣味。精心设计的照明进一步增强了这些细微的差别，投射出阴影和高光，使精致的色调焕然一新。它展现了低调的优雅和永恒的魅力。"
+  }
+]

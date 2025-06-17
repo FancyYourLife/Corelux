@@ -83,6 +83,12 @@
 }
 /* Common CSS for all pages End */
 
+/* Home Page Index Page CSS Start */
+.homePageDiv{
+	margin-top: -38px;
+}
+/* Home Page Index Page CSS End */
+
 /* About Us Page CSS Start */
 .coreAboutUs{
 	background-color: #1c2d39;
@@ -248,6 +254,15 @@
 	.coreTitle {
 		font-size: 20px; /* Adjust font size in phone view */
 	}
+	
+	.contactTitle {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	.coreSubTitle {
+		padding-top: 0;
+	}	
 }
 
 @media screen and (min-width: 768px) {
@@ -257,5 +272,9 @@
 	.coreModal{
 		max-width: 80%;
 		max-width: 1024px;
+	}
+	.slider-header-block img{
+		width: 100%;
+		max-height: 700px;
 	}
 }	

@@ -125,3 +125,21 @@ function variationToText(variation) {
 	}
 }
 
+function updateQWDZPhoto(sku,title,titleCN,image1,image2,image3,image4,image5,image6,description,descriptionCN){
+	//alert(image3);
+	
+	//Update Modal Photo
+	document.getElementById("productImg1").src=image1;
+	document.getElementById("productImg2").src=image2;
+	document.getElementById("productImg3").src=image3;
+	document.getElementById("productImg4").src=image4;
+	document.getElementById("productImg5").src=image5;
+	document.getElementById("productImg6").src=image6;
+	document.getElementById("productName").innerText=title;
+	document.getElementById("productNameCN").innerText=titleCN;
+	document.getElementById("productDescription").innerHTML =description;
+	document.getElementById("productDescriptionCN").innerHTML =descriptionCN;
+}
+
+
+

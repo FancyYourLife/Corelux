@@ -125,7 +125,7 @@ function variationToText(variation) {
 	}
 }
 
-function updateQWDZPhoto(sku,title,titleCN,image1,image2,image3,image4,image5,image6,description,descriptionCN){
+function updateQWDZPhoto(sku,title,titleCN,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,description,descriptionCN){
 	//alert(image3);
 	
 	//Update Modal Photo
@@ -135,6 +135,10 @@ function updateQWDZPhoto(sku,title,titleCN,image1,image2,image3,image4,image5,im
 	document.getElementById("productImg4").src=image4;
 	document.getElementById("productImg5").src=image5;
 	document.getElementById("productImg6").src=image6;
+	document.getElementById("productImg7").src=image7;
+	document.getElementById("productImg8").src=image8;
+	document.getElementById("productImg9").src=image9;
+	document.getElementById("productImg10").src=image10;
 	document.getElementById("productName").innerText=title;
 	document.getElementById("productNameCN").innerText=titleCN;
 	document.getElementById("productDescription").innerHTML =description;

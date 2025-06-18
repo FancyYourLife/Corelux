@@ -37,38 +37,73 @@
 		</div>
 		<!-- Your Content Start Here -->
 		<style>
-			.quanWuDingZhiDiv{
-				margin-top: -38px;
-			}
+		.accordion-button {
+			background-color: #fff;
+		}
+		.accordion-button:not(.collapsed) {
+			color: #000;
+			background-color: #fff;
+		}
 		</style>
 		<div class="quanWuDingZhiDiv">
 		<div class="container">		
-			<h3 class="display-4 displayEN">Full-Home Custom</h1>
-			<h3 class="display-4 displayCN">全屋定制</h1>
-			<p class="displayEN">Crafting spaces and making dream homes come true</p>
-			<p class="displayCN">专业空间改造，帮您实现梦想家园</p>
-		
-			<div id="productList" class="row" style="text-align:left;"></div>
-			<script>
-			let ulProductList = document.getElementById("productList");
-				fetch("json/quanWuDingZhi-Gallery1.json").then((res) => res.json()).then((allProducts) => {
-					for (const index in allProducts) {
-						const product = allProducts[index];
-						//let hrefProperty ="";
-						ulProductList.insertAdjacentHTML(
-							"beforeend",
-							`
-							<div class="col-md-4">
-								<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updateQWDZPhoto('${product.sku}','${product.title}','${product.titleCN}','${product.images[0]}','${product.images[1]}','${product.images[2]}','${product.images[3]}','${product.images[4]}','${product.images[5]}','${product.description}','${product.descriptionCN}');" width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
-								<h2 class="floorTitle displayEN">${product.title}</h2>
-								<h2 class="floorTitle displayCN">${product.titleCN}</h2>
-								<div class="floorSku">${product.sku}</div>
-							</div>
-							`
-						);
-					}
-                });
-			</script>
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="displayEN">Introduction</span><span class="displayCN">服务介绍</span></button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3 class="display-4 displayEN">Full-Home Custom</h1>
+						<h3 class="display-4 displayCN">全屋定制</h1>
+						<p class="displayEN">Crafting spaces and making dream homes come true</p>
+						<p class="displayCN">专业空间改造，帮您实现梦想家园</p>
+						
+						<img src="./img/homePage/1.jpg" alt="Full-Home Custom" style="width:100%;"/>
+						
+						<p style="text-align: left;" class="displayEN">At CORELUX INTERIOR SUPPLY, we are your trusted partner for transforming your vision into a beautifully crafted reality. Specializing in comprehensive interior design and full home customization, we pride ourselves on delivering exceptional results tailored to your unique style and needs.</p>
+						<p style="text-align: left;" class="displayEN">Our team of professional designers boasts expertise across hundreds of interior styles, ensuring we can bring any aesthetic, from minimalist modern to opulent luxury, to life. Beyond our in-house capabilities, we are also uniquely positioned to meticulously implement designs from external architects and designers, focusing on flawless execution and attention to detail.</p>
+						<p style="text-align: left;" class="displayEN">We understand that the foundation of a beautiful home lies in its quality. That's why we exclusively source and utilize interior materials that meet the highest safety and standard specifications, guaranteeing durability and peace of mind for your family. Furthermore, our dedicated team of professional installation workers is renowned for their efficiency, precision, and responsibility, ensuring your project is completed swiftly and to the most exacting standards. With CORELUX INTERIOR SUPPLY, you gain a partner committed to design excellence, superior craftsmanship, and a seamless journey to your dream home.</p>
+						<p style="text-align: left;" class="displayEN">The following is a partial display of the works of our design team. More wonderful designs will be published in succession.(Click on the thumbnail to see details)</p>
+						<p style="text-align: left;" class="displayCN">我们是您值得信赖的合作伙伴，助您将您的愿景化为精美的现实。我们专注于全面的室内设计和全屋定制，以根据您独特的风格和需求提供卓越的定制成果而自豪。</p>
+						<p style="text-align: left;" class="displayCN">我们的专业设计师团队精通数百种室内风格，确保我们能够将任何美学风格，从简约的现代风格到奢华的奢华风格，都融入到您的生活中。除了我们内部的专业能力外，我们还拥有独特的优势，能够一丝不苟地执行外部建筑师和设计师的设计，专注于完美的执行和对细节的关注。</p>
+						<p style="text-align: left;" class="displayCN">我们深知，美好家园的基础在于其品质。因此，我们只采购和使用符合最高安全和标准规格的室内材料，以确保其经久耐用，让您的家人安心无忧。此外，我们专业的安装团队以其高效、精准和责任感而闻名，确保您的项目能够快速完成，并达到最严格的标准。选择CORELUX INTERIOR SUPPLY，您将拥有一个致力于卓越设计、精湛工艺和无缝衔接的合作伙伴，助您打造梦想家园。</p>
+						<p style="text-align: left;" class="displayCN">以下是我们的设计师团队的部分作品展示，更多精彩设计将陆续刊出。(点击小图查看细节)</p>
+					</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="displayEN">Our Designs</span><span class="displayCN">设计师作品精选</span></button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<div id="productList" class="row" style="text-align:left;"></div>
+						<script>
+						let ulProductList = document.getElementById("productList");
+							fetch("json/quanWuDingZhi-Gallery1.json").then((res) => res.json()).then((allProducts) => {
+								for (const index in allProducts) {
+									const product = allProducts[index];
+									//let hrefProperty ="";
+									ulProductList.insertAdjacentHTML(
+										"beforeend",
+										`
+										<div class="col-md-4">
+											<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updateQWDZPhoto('${product.sku}','${product.title}','${product.titleCN}','${product.images[0]}','${product.images[1]}','${product.images[2]}','${product.images[3]}','${product.images[4]}','${product.images[5]}','${product.images[6]}','${product.images[7]}','${product.images[8]}','${product.images[9]}','${product.description}','${product.descriptionCN}');" width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
+											<h2 class="floorTitle displayEN">${product.title}</h2>
+											<h2 class="floorTitle displayCN">${product.titleCN}</h2>
+											<div class="floorSku">${product.sku}</div>
+										</div>
+										`
+									);
+								}
+							});
+						</script>
+					</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		
 <!-- The Modal Start-->
@@ -91,24 +126,40 @@
 					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(4)"></a></li>
 					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(5)"></a></li>
 					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(6)"></a></li>
+					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(7)"></a></li>
+					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(8)"></a></li>
+					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(9)"></a></li>
+					<li class="page-item dotShow"><a class="page-link" href="#"onclick="currentSlide(10)"></a></li>
  				</ul>
 				<div class="mySlides " style="display: none;">
-                    <img style="width: 100%" id="productImg1" src="#">
+                    <img style="width: 100%" id="productImg1" src="#"/>
                 </div>
                 <div class="mySlides " style="display: none;">
-                    <img style="width: 100%" id="productImg2" src="#">
+                    <img style="width: 100%" id="productImg2" src="#"/>
                 </div>
 				<div class="mySlides " style="display: block;">
-                    <img style="width: 100%" id="productImg3" src="#">
+                    <img style="width: 100%" id="productImg3" src="#"/>
                 </div>
 				<div class="mySlides " style="display: block;">
-                    <img style="width: 100%" id="productImg4" src="#">
+                    <img style="width: 100%" id="productImg4" src="#"/>
                 </div>
 				<div class="mySlides " style="display: block;">
-                    <img style="width: 100%" id="productImg5" src="#">
+                    <img style="width: 100%" id="productImg5" src="#"/>
                 </div>
 				<div class="mySlides " style="display: block;">
-                    <img style="width: 100%" id="productImg6" src="#">
+                    <img style="width: 100%" id="productImg6" src="#"/>
+                </div>
+				<div class="mySlides " style="display: block;">
+                    <img style="width: 100%" id="productImg7" src="#"/>
+                </div>
+				<div class="mySlides " style="display: block;">
+                    <img style="width: 100%" id="productImg8" src="#"/>
+                </div>
+				<div class="mySlides " style="display: block;">
+                    <img style="width: 100%" id="productImg9" src="#"/>
+                </div>
+				<div class="mySlides " style="display: block;">
+                    <img style="width: 100%" id="productImg10" src="#"/>
                 </div>
 				<br/>
 				<button type="button" class="btn coreButton"  onclick="plusSlides(-1)">Previous</button>

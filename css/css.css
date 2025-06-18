@@ -84,8 +84,9 @@
 /* Common CSS for all pages End */
 
 /* Home Page Index Page CSS Start */
-.homePageDiv{
-	margin-top: -38px;
+.slider-header-block img{
+	width: 100%;
+	max-height: 700px;
 }
 /* Home Page Index Page CSS End */
 
@@ -263,7 +264,11 @@
 	
 	.coreSubTitle {
 		padding-top: 0;
-	}	
+	}
+	
+	.slider-header-block {
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -274,8 +279,7 @@
 		max-width: 80%;
 		max-width: 1024px;
 	}
-	.slider-header-block img{
-		width: 100%;
-		max-height: 700px;
+	.homePageDiv{
+		margin-top: -38px;
 	}
 }	

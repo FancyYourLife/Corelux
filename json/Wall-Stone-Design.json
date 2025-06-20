@@ -2,6 +2,7 @@
   {
     "sku": "",
     "title": "Barcelona",
+	"titleCN": "巴塞罗那",
     "name": "Barcelona",
     "display_image": "./img/Wall-Panel/Stone-Design/Barcelona/1-324x324.jpg",
     "images": [
@@ -10,6 +11,7 @@
       "./img/Wall-Panel/Stone-Design/Barcelona/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
+	"descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
     "color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
@@ -20,6 +22,7 @@
   {
     "sku": "",
     "title": "Terrazzo",
+	"titleCN": "水磨石",
     "name": "Terrazzo",
     "display_image": "./img/Wall-Panel/Stone-Design/Terrazzo/1-324x324.jpg",
     "images": [
@@ -28,7 +31,8 @@
       "./img/Wall-Panel/Stone-Design/Terrazzo/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -38,6 +42,7 @@
   {
     "sku": "",
     "title": "Stone Misty",
+	"titleCN": "石雾",
     "name": "Stone-Misty",
     "display_image": "./img/Wall-Panel/Stone-Design/Stone-Misty/1-324x324.jpg",
     "images": [
@@ -46,7 +51,8 @@
       "./img/Wall-Panel/Stone-Design/Stone-Misty/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -56,6 +62,7 @@
   {
     "sku": "",
     "title": "Cottage Blue",
+	"titleCN": "小屋蓝",
     "name": "Cottage-Blue",
     "display_image": "./img/Wall-Panel/Stone-Design/Cottage-Blue/1-324x324.jpg",
     "images": [
@@ -64,7 +71,8 @@
       "./img/Wall-Panel/Stone-Design/Cottage-Blue/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -74,6 +82,7 @@
   {
     "sku": "",
     "title": "Desert Stone",
+	"titleCN": "沙漠石",
     "name": "Desert-Stone",
     "display_image": "./img/Wall-Panel/Stone-Design/Desert-Stone/1-324x324.jpg",
     "images": [
@@ -82,7 +91,8 @@
       "./img/Wall-Panel/Stone-Design/Desert-Stone/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -92,6 +102,7 @@
   {
     "sku": "",
     "title": "Stone Ivory",
+	"titleCN": "石象牙",
     "name": "Stone-Ivory",
     "display_image": "./img/Wall-Panel/Stone-Design/Stone-Ivory/1-324x324.jpg",
     "images": [
@@ -100,7 +111,8 @@
       "./img/Wall-Panel/Stone-Design/Stone-Ivory/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -110,6 +122,7 @@
   {
     "sku": "",
     "title": "Cottage Grey",
+	"titleCN": "小屋灰",
     "name": "Cottage-Grey",
     "display_image": "./img/Wall-Panel/Stone-Design/Cottage-Grey/1-324x324.jpg",
     "images": [
@@ -118,7 +131,8 @@
       "./img/Wall-Panel/Stone-Design/Cottage-Grey/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -128,6 +142,7 @@
   {
     "sku": "",
     "title": "Stone Moon",
+	"titleCN": "石月",
     "name": "Stone-Moon",
     "display_image": "./img/Wall-Panel/Stone-Design/Stone-Moon/1-324x324.jpg",
     "images": [
@@ -136,7 +151,8 @@
       "./img/Wall-Panel/Stone-Design/Stone-Moon/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -146,6 +162,7 @@
   {
     "sku": "",
     "title": "Carrara Marble",
+	"titleCN": "卡拉拉大理石",
     "name": "Carrara-Marble",
     "display_image": "./img/Wall-Panel/Stone-Design/Carrara-Marble/1-324x324.jpg",
     "images": [
@@ -154,7 +171,8 @@
       "./img/Wall-Panel/Stone-Design/Carrara-Marble/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -164,6 +182,7 @@
   {
     "sku": "",
     "title": "Loft Rusty",
+	"titleCN": "阁楼锈色",
     "name": "Loft-Rusty",
     "display_image": "./img/Wall-Panel/Stone-Design/Loft-Rusty/1-324x324.jpg",
     "images": [
@@ -172,7 +191,8 @@
       "./img/Wall-Panel/Stone-Design/Loft-Rusty/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -182,6 +202,7 @@
   {
     "sku": "",
     "title": "Red Brick",
+	"titleCN": "红砖",
     "name": "Red-Brick",
     "display_image": "./img/Wall-Panel/Stone-Design/Red-Brick/1-324x324.jpg",
     "images": [
@@ -190,7 +211,8 @@
       "./img/Wall-Panel/Stone-Design/Red-Brick/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -200,6 +222,7 @@
   {
     "sku": "",
     "title": "Stone Grey",
+	"titleCN": "石灰色",
     "name": "Stone-Grey",
     "display_image": "./img/Wall-Panel/Stone-Design/Stone-Grey/1-324x324.jpg",
     "images": [
@@ -208,7 +231,8 @@
       "./img/Wall-Panel/Stone-Design/Stone-Grey/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -218,6 +242,7 @@
   {
     "sku": "",
     "title": "Loft Concrete",
+	"titleCN": "阁楼混凝土",
     "name": "Loft-Concrete",
     "display_image": "./img/Wall-Panel/Stone-Design/Loft-Concrete/1-324x324.jpg",
     "images": [
@@ -226,7 +251,8 @@
       "./img/Wall-Panel/Stone-Design/Loft-Concrete/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -236,6 +262,7 @@
   {
     "sku": "",
     "title": "Stone Anthracite",
+	"titleCN": "石材无烟煤",
     "name": "Stone-Anthracite",
     "display_image": "./img/Wall-Panel/Stone-Design/Stone-Anthracite/1-324x324.jpg",
     "images": [
@@ -244,7 +271,8 @@
       "./img/Wall-Panel/Stone-Design/Stone-Anthracite/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",

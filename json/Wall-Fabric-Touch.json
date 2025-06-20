@@ -2,6 +2,7 @@
   {
     "sku": "",
     "title": "Ice Blue Mosaic",
+	"titleCN": "冰蓝马赛克",
     "name": "Ice-Blue-Mosaic",
     "display_image": "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/1-324x324.jpg",
     "images": [
@@ -10,7 +11,8 @@
       "./img/Wall-Panel/Fabric-Touch/Ice-Blue-Mosaic/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -20,7 +22,8 @@
   {
     "sku": "",
     "title": "Dusky",
-    "name": "Dusky",
+    "titleCN": "暗色",
+	"name": "Dusky",
     "display_image": "./img/Wall-Panel/Fabric-Touch/Dusky/1-324x324.jpg",
     "images": [
       "./img/Wall-Panel/Fabric-Touch/Dusky/1.webp",
@@ -28,7 +31,8 @@
       "./img/Wall-Panel/Fabric-Touch/Dusky/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -38,7 +42,8 @@
   {
     "sku": "",
     "title": "Textile Tweed",
-    "name": "Textile-Tweed",
+    "titleCN": "粗花呢纺织",
+	"name": "Textile-Tweed",
     "display_image": "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/1-324x324.jpg",
     "images": [
       "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/1.webp",
@@ -46,7 +51,8 @@
       "./img/Wall-Panel/Fabric-Touch/Textile-Tweed/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -56,7 +62,8 @@
   {
     "sku": "",
     "title": "Powder Blue Mosaic",
-    "name": "Powder-Blue-Mosaic",
+    "titleCN": "粉蓝马赛克",
+	"name": "Powder-Blue-Mosaic",
     "display_image": "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/1-324x324.jpg",
     "images": [
       "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/1.webp",
@@ -64,7 +71,8 @@
       "./img/Wall-Panel/Fabric-Touch/Powder-Blue-Mosaic/3.webp"
     ],
     "description": "TATA PVC wall panels are an innovative and practical alternative to traditional wall coverings. They are specifically designed to combine aesthetic appeal with durability and functionality, making them an ideal choice for a variety of applications. Whether you are looking to revamp your bathroom or create a stunning focal point in your living space, our featured brand TATA Wall Panel offers a wide range of choices to make your dream design come true.",
-    "color_variation": 4,
+    "descriptionCN": "TATA PVC 墙板是传统墙面装饰的创新实用替代品。其精心设计，兼具美观性、耐用性和功能性，是各种应用的理想之选。无论您是想翻新浴室，还是想打造令人惊艳的客厅焦点，我们的特色品牌 TATA 墙板都能为您提供丰富的选择，助您梦想成真。",
+	"color_variation": 4,
     "foot_traffic": 4,
     "gloss": 0,
     "width": "250mm, 600mm, 1000mm",
@@ -74,7 +82,8 @@
   {
     "sku": "",
     "title": "Sheer",
-    "name": "Sheer",
+    "titleCN": "纯色",
+	"name": "Sheer",
     "display_image": "./img/Wall-Panel/Fabric-Touch/Sheer/1-324x324.jpg",
     "images": [
       "./img/Wall-Panel/Fabric-Touch/Sheer/1.webp",

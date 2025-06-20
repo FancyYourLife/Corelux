@@ -37,13 +37,12 @@
 		</div>
 		<!-- Your Content Start Here -->
 		<div class="container">
-			<header>
-				<h1>For Floor</h1>
-			</header>
+			<h1 class="displayEN">For Floor</h1>
+			<h1 class="displayCN">地板配件</h1>
 			<div id="productList" class="row" style="text-align:left;"></div>
-			<header>
-				<h1>For Walls</h1>
-			</header>
+			<hr/>
+			<h1 class="displayEN">For Walls</h1>
+			<h1 class="displayCN">墙板配件</h1>
 			<div id="productList2" class="row" style="text-align:left;"></div>
 			<script>
 			let ulProductList = document.getElementById("productList");
@@ -56,8 +55,7 @@
 							`
 							<div class="col-md-4">
 								<img width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
-								<h2 class="floorTitle displayEN">${product.title}</h2>
-								<h2 class="floorTitle displayCN">${product.titleCN}</h2>
+								<h2 class="floorTitle">${product.title}</h2>
 								<div class="floorSku">${product.sku}</div>
 							</div>
 							`
@@ -74,8 +72,7 @@
 							`
 							<div class="col-md-4">
 								<img width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
-								<h2 class="floorTitle displayEN">${product.title}</h2>
-								<h2 class="floorTitle displayCN">${product.titleCN}</h2>
+								<h2 class="floorTitle">${product.title}</h2>
 								<div class="floorSku">${product.sku}</div>
 							</div>
 							`

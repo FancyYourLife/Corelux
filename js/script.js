@@ -88,7 +88,7 @@ function switchDisplay() {
 }
 
 var currentImge = "";
-function updatePhoto(sku,title,image1,image2,image3,description,color_variation,foot_traffic,width, length, thickness){
+function updatePhoto(sku,title,titleCN,image1,image2,image3,description,descriptionCN,color_variation,foot_traffic,width, length, thickness){
 	//alert(image3);
 	//Update Modal Copy URL
 	currentImage = "http://corelux.com.sg"+image1.substring(1);
@@ -98,7 +98,9 @@ function updatePhoto(sku,title,image1,image2,image3,description,color_variation,
 	document.getElementById("productImg2").src=image2;
 	document.getElementById("productImg3").src=image3;
 	document.getElementById("productName").innerText=title;
+	document.getElementById("productNameCN").innerText=titleCN;
 	document.getElementById("productDescription").innerHTML =description;
+	document.getElementById("productDescriptionCN").innerHTML =descriptionCN;
 	
 	//Update product-detail-top
 	document.getElementById("liColorVariation").childNodes[0].textContent ="Color Variation - " + variationToText(color_variation);

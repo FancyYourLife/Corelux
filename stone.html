@@ -48,7 +48,7 @@
 							"beforeend",
 							`
 							<div class="col-md-4">
-								<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updatePhoto('${product.sku}','${product.title}','${product.images[0]}','${product.images[1]}','${product.images[2]}','${product.description}','${product.color_variation}','${product.foot_traffic}','${product.width}','${product.length}','${product.thickness}');" width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
+								<img type="button" data-bs-toggle="modal" data-bs-target="#photoDetail" onclick="updatePhoto('${product.sku}','${product.title}','${product.titleCN}','${product.images[0]}','${product.images[1]}','${product.images[2]}','${product.description}','${product.descriptionCN}','${product.color_variation}','${product.foot_traffic}','${product.width}','${product.length}','${product.thickness}');" width="324" height="324" src="${product.display_image}" class="flooring-thumbnail" alt="${product.title}" loading="lazy" sizes="(max-width: 324px) 100vw, 324px">						
 								<h2 class="floorTitle displayEN">${product.title}</h2>
 								<h2 class="floorTitle displayCN">${product.titleCN}</h2>
 								<div class="floorSku">${product.sku}</div>
@@ -66,7 +66,8 @@
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title" id="productName">TATA Flooring</h4>
+       <h4 class="modal-title displayEN" id="productName">TATA Flooring</h4>
+		<h4 class="modal-title displayCN" id="productNameCN">TATA Flooring</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
@@ -112,8 +113,8 @@
                     <img style="width: 100%" id="productImg3" src="#">
                 </div>
 				<br/>
-				<button type="button" class="btn coreButton"  onclick="plusSlides(-1)">Previous</button>
-				<button type="button" class="btn coreButton" onclick="plusSlides(1)">Next</button>
+				<button type="button" class="btn coreButton"  onclick="plusSlides(-1)"><span class="displayEN">Previous</span><span class="displayCN">上一个</span></button>
+				<button type="button" class="btn coreButton" onclick="plusSlides(1)"><span class="displayEN">Next</span><span class="displayCN">下一个</span></button>
 				<br/>
 				<script>
 				//Script to Control the Picture display
@@ -151,7 +152,8 @@
 			
 			<div class="row product-detail-top">
 				<div class="col-md-6">
-					<p class="product-description" id="productDescription"></p>
+					<p class="product-description displayEN" id="productDescription"></p>
+					<p class="product-description displayCN" id="productDescriptionCN"></p>
 				</div>
 				<div class="col-md-6">
 					<ul class="product-detail-top__attributes">
@@ -178,23 +180,28 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-2">
 					<img class="bottomImg" src="./img/floor-product_files/35-Year-Warranty-icon.png" alt=""/>
-					<p>35 Year Finish Warranty</p>
+					<p class="displayEN">35 Year Finish Warranty</p>
+					<p class="displayCN">35年质量保证</p>
 				</div>
 				<div class="col-md-2">
 					<img class="bottomImg" src="./img/floor-product_files/waterproof-icon.png" alt=""/>
-					<p>100% Waterproof Surface</p>
+					<p class="displayEN">100% Waterproof Surface</p>
+					<p class="displayCN">百分百表层防水</p>
 				</div>
 				<div class="col-md-2">
 					<img class="bottomImg" src="./img/floor-product_files/Micro-Bevel-Edge-icon.png" alt="" />
-					<p>Micro Bevelled</p>
+					<p class="displayEN">Micro Bevelled</p>
+					<p class="displayCN">微斜角</p>
 				</div>
 				<div class="col-md-2">
 					<img class="bottomImg" src="./img/floor-product_files/EmbossedGrainFinish-icon.png" alt=""/>
-					<p>Embossed Grain</p>
+					<p class="displayEN">Embossed Grain</p>
+					<p class="displayCN">压花纹理</p>
 				</div>
 				<div class="col-md-2">
 					<img class="bottomImg" src="./img/floor-product_files/Smoothfinish-icon.png" alt=""/>
-					<p>Smooth Texture</p>
+					<p class="displayEN">Smooth Texture</p>
+					<p class="displayCN">光滑质感</p>
 				</div>
 				<div class="col-md-1"></div>
 			</div>

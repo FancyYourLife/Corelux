@@ -100,6 +100,26 @@
 	"descriptionCN":"其标志性特征一目了然：简洁的线条，以白色和浅色木色为主的单色配色方案，以及对集成式嵌入式家具的重视，最大限度地利用空间，减少杂乱。书桌和高架柜与墙面无缝衔接，营造出一个简洁实用的区域，没有任何多余的装饰。整体效果简洁、有序、平静，兼顾功能性和简洁的美感。这种风格通常会让较小的空间显得更宽敞、更开阔。"
   },
   {
+     "sku": "Nanyang",
+    "title": "Nan Yang",
+	"titleCN": "南洋风情",
+    "display_image": "./img/Quan-Wu-Ding-Zhi/Nanyang/0.jpg",
+    "images": [
+      "./img/Quan-Wu-Ding-Zhi/Nanyang/1.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Nanyang/2.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Nanyang/3.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/4.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/5.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/6.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/7.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/8.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/9.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Nanyang/10.jpg"
+    ],
+    "description": "The Nanyang style in interior design, deeply rooted in Southeast Asian heritage, particularly Singapore and Malaysia, embodies a unique blend of colonial influences, traditional Asian aesthetics, and tropical practicality. It is characterized by the extensive use of natural materials like dark wood, rattan, and bamboo, often incorporated into furniture and decorative elements. Ornate Peranakan tiles frequently feature, adding vibrant patterns and a touch of historical charm. The style embraces a sense of openness and airiness, crucial for the tropical climate, with louvered windows, high ceilings, and an emphasis on natural ventilation. Rich textiles, often with intricate motifs, and a color palette that leans towards earthy tones punctuated by pops of vibrant color, complete this distinctive and culturally rich aesthetic.",
+	"descriptionCN":"南洋风格的室内设计深深植根于东南亚文化传统，尤其是新加坡和马来西亚，体现了殖民时期影响、亚洲传统美学和热带实用性的独特融合。其特点是大量使用深色木材、藤条和竹子等天然材料，并经常将其融入家具和装饰元素中。华丽的娘惹瓷砖经常出现，为其增添了鲜艳的图案和一丝历史韵味。这种风格注重开放和通风，这对于热带气候至关重要，百叶窗、高高的天花板以及对自然通风的重视也使其更加突出。丰富的纺织品通常带有复杂的图案，配色以大地色为主，并点缀着鲜艳的色彩，共同构成了这种独特而富有文化底蕴的美学风格。"
+  },
+  {
     "sku": "Modern-Minimalist-1",
     "title": "Modern Minimalist 1",
 	"titleCN": "现代简约一",

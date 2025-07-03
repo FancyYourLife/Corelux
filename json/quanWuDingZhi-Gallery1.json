@@ -119,6 +119,26 @@
     "description": "The Nanyang style in interior design, deeply rooted in Southeast Asian heritage, particularly Singapore and Malaysia, embodies a unique blend of colonial influences, traditional Asian aesthetics, and tropical practicality. It is characterized by the extensive use of natural materials like dark wood, rattan, and bamboo, often incorporated into furniture and decorative elements. Ornate Peranakan tiles frequently feature, adding vibrant patterns and a touch of historical charm. The style embraces a sense of openness and airiness, crucial for the tropical climate, with louvered windows, high ceilings, and an emphasis on natural ventilation. Rich textiles, often with intricate motifs, and a color palette that leans towards earthy tones punctuated by pops of vibrant color, complete this distinctive and culturally rich aesthetic.",
 	"descriptionCN":"南洋风格的室内设计深深植根于东南亚文化传统，尤其是新加坡和马来西亚，体现了殖民时期影响、亚洲传统美学和热带实用性的独特融合。其特点是大量使用深色木材、藤条和竹子等天然材料，并经常将其融入家具和装饰元素中。华丽的娘惹瓷砖经常出现，为其增添了鲜艳的图案和一丝历史韵味。这种风格注重开放和通风，这对于热带气候至关重要，百叶窗、高高的天花板以及对自然通风的重视也使其更加突出。丰富的纺织品通常带有复杂的图案，配色以大地色为主，并点缀着鲜艳的色彩，共同构成了这种独特而富有文化底蕴的美学风格。"
   },
+    {
+     "sku": "Frame-Visual",
+    "title": "Frame Visual",
+	"titleCN": "秩序之美",
+    "display_image": "./img/Quan-Wu-Ding-Zhi/Frame-Visual/0.jpg",
+    "images": [
+      "./img/Quan-Wu-Ding-Zhi/Frame-Visual/1.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Frame-Visual/2.jpg",
+      "./img/Quan-Wu-Ding-Zhi/Frame-Visual/3.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/4.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/5.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/6.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/7.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/8.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/9.jpg",
+	  "./img/Quan-Wu-Ding-Zhi/Frame-Visual/10.jpg"
+    ],
+    "description": "The Frame Visual style in interior design is characterized by its emphasis on creating clear, defined boundaries and highlighting specific elements within a space, much like a picture frame isolates and draws attention to its contents. This style often employs strong lines, geometric shapes, and contrasting colors to delineate areas or feature architectural details, artwork, or furniture. Materials with distinct textures and patterns are frequently used to further enhance the framing effect. The result is a highly structured and organized aesthetic that guides the eye and brings a sense of intentionality and focus to the design, often feeling modern and sophisticated.",
+	"descriptionCN":"室内设计中的“框架视觉”风格注重创造清晰明确的边界，并突出空间内的特定元素，就像相框将人们的注意力从其内容中分离出来并吸引注意力一样。这种风格通常运用强烈的线条、几何形状和对比色来划分区域，或突出建筑细节、艺术品或家具。具有独特纹理和图案的材料常被用来进一步增强“框架”效果。最终呈现出一种高度结构化和条理性的美感，引导视线，并为设计带来一种意向性和焦点感，往往给人一种现代而精致的感觉。"
+  },
   {
     "sku": "Modern-Minimalist-1",
     "title": "Modern Minimalist 1",
